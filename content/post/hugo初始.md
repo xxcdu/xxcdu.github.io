@@ -26,6 +26,8 @@ git commit -m "     "
 
 8、将public推上去:git push -u origin master
 
+9、更新：生成新的public，git add 、commit推送到github
+
 git add时提示“warning: LF(换行) will be replaced by CRLF（回车换行）”：
     1、成因：Dos和Windows平台： 使用回车（CR）和换行（LF）两个字符来结束    一行，回车+换行(CR+LF)，即“\r\n”；
     Mac 和 Linux平台：只使用换行（LF）一个字符来结束一行，即“\n”。。。
