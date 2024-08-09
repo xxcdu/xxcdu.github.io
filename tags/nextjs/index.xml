@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nextjs on xxcdu_blog</title>
+    <link>https://xxcdu.github.io/tags/nextjs/</link>
+    <description>Recent content in Nextjs on xxcdu_blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xxcdu.github.io/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo-github常见问题</title>
+      <link>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&amp;hellip;..&#xA;2、若在github远端修改仓库代码，则在将public push时可能会出现：error: failed to push some refs to &amp;lsquo;https://github.com/xxcdu/xxcdu.github.io/&#39; hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart.</description>
+    </item>
+    <item>
+      <title>start-hugo</title>
+      <link>https://xxcdu.github.io/blog/start-hugo/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/blog/start-hugo/</guid>
+      <description>条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站：hugo new site /path/to/site&#xA;2、克隆主题：git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c（具体方式看主题中的介绍） 主题网址：https://themes.gohugo.io/ 下载主题后进入hugo.</description>
+    </item>
+  </channel>
+</rss>
