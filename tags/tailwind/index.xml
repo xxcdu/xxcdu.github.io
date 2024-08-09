@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tailwind on xxcdu_blog</title>
+    <title>Tailwind on Hugoplate</title>
     <link>https://xxcdu.github.io/tags/tailwind/</link>
-    <description>Recent content in Tailwind on xxcdu_blog</description>
+    <description>Recent content in Tailwind on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
       <guid>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&amp;hellip;..&#xA;2、若在github远端修改仓库代码，则在将public push时可能会出现：error: failed to push some refs to &amp;lsquo;https://github.com/xxcdu/xxcdu.github.io/&#39; hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart.</description>
+      <description>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&amp;hellip;..&#xA;2、若在github远端修改仓库代码，则在将public push时可能会出现： error: failed to push some refs to &amp;lsquo;https://github.</description>
     </item>
     <item>
       <title>start-hugo</title>
