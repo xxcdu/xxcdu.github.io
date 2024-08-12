@@ -72,7 +72,7 @@
 
 
 
-  <base href="https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" />
+  <base href="https://xxcdu.github.io/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
 
 
 
@@ -83,7 +83,7 @@
   
 
 
-<title>Hugo-github常见问题</title>
+<title>python基本语法</title>
 
 
 
@@ -186,13 +186,13 @@
 
 
 
-<meta property="og:title" content="Hugo-github常见问题" />
+<meta property="og:title" content="python基本语法" />
 <meta property="og:description" content="this is meta description" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" />
+<meta property="og:url" content="https://xxcdu.github.io/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
 
 
-<meta name="twitter:title" content="Hugo-github常见问题" />
+<meta name="twitter:title" content="python基本语法" />
 <meta name="twitter:description" content="this is meta description" />
 
 
@@ -1008,7 +1008,7 @@
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" w-full rounded img"
-            alt="Hugo-github常见问题"
+            alt="python基本语法"
             width="1096"
             height="480" />
         </picture>
@@ -1025,7 +1025,7 @@
             </div>
           
           <h1 class="h2 mb-4">
-            Hugo-github常见问题
+            python基本语法
           </h1>
           <ul class="mb-4">
             <li class="mr-4 inline-block">
@@ -1076,26 +1076,54 @@
   <nav id="TableOfContents"></nav>
 </details>
 
-            <p>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..</p>
-<p>2、若在github远端修改仓库代码，则在将public push时可能会出现：
-error: failed to push some refs to &lsquo;<a href="https://github.com/xxcdu/xxcdu.github.io/%27"
-
-
-
-
- target="_blank"
- 
-
-
->https://github.com/xxcdu/xxcdu.github.io/'</a>
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. If you want to integrate the remote changes,
-hint: use &lsquo;git pull&rsquo; before pushing again.
-hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;help&rsquo; for details.显示远端被修改。
-这时需要先拉取远程更改：git pull origin master，在本地分支上更改冲突文件，再git add 提交推送。</p>
-<p>3、远程部署后，想在本地启动服务并修改网站文件，使用“hugo server -t m10c –buildDrafts”可能出现本地服务启动后，主页中没有文章链接的情况，这时查看public
-根目录文件夹的index.html时，发现根本没有与链接文章url有关的的部分。更新public后，使用“hugo server -D”启动服务后主页出现了文章链接，但点开后跳转到了远程服务器的地址如https://xxcdu.github.io/post/start-hugo/而不是本地文章地址http://localhost:1313/post/hugo-github%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/，这可能是由于url冲突，需配置好网站根目录下的hugo.toml文件，将baseURL设置为远程部署的地址url。修改后发现已可以在访问本地站点。且注意使用时不要通过
-“hugo server -t m10c –buildDrafts”启动（原因不明），而是通过“hugo server -D“方式启动服务。</p>
+            <p>1、格式化字符串：f”······“
+first_name = Bili
+last_name = Halidon
+full_name = f&quot;{first_name}{last_name}&quot;
+print(f&quot;Hello, {full_name.title()}&quot;)</p>
+<p>2、列表 a = [&lsquo;a&rsquo;, 1, &lsquo;abc&rsquo;]</p>
+<p>3、复制列表 a = b[:]       a = b是引用同一个列表      实验：
+a = [&lsquo;a&rsquo;, 1, &ldquo;b&rdquo;]
+b = a
+c = a[:]
+a.append(&lsquo;c&rsquo;)
+print(f&quot;a = {a}&quot;)
+print(f&quot;b = {b}&quot;)
+print(f&quot;c = {c}&quot;)</p>
+<p>结果：
+a = [&lsquo;a&rsquo;, 1, &lsquo;b&rsquo;, &lsquo;c&rsquo;]
+b = [&lsquo;a&rsquo;, 1, &lsquo;b&rsquo;, &lsquo;c&rsquo;]
+c = [&lsquo;a&rsquo;, 1, &lsquo;b&rsquo;]</p>
+<p>4、元组a = （1, 2, 3）</p>
+<p>5、字典： dic = {&lsquo;a&rsquo;:1,&lsquo;b&rsquo;:2}
+添加键值对：dic[&lsquo;c&rsquo;] = 3
+删除键值对：del dic[&lsquo;c&rsquo;]
+遍历键值对：for key, value in dic():
+print(f&quot;{key}:{value}&quot;)
+遍历所有键：for i in dic.keys():
+print(i)
+遍历所有值：for i in dic.values():</p>
+<p>6、防止函数修改字符串：使用切片副本。function_name(list_name[ : ])</p>
+<p>7、传递任意数量实参： def make_pizza(size, *toppings):······</p>
+<p>8、使用任意数量的关键字实参（键值对）：def build_profile(first, last, **user_info):······</p>
+<p>9、类：
+class dog:
+def <strong>init</strong>(self, name, age):
+self.name = name
+self.age = age</p>
+<pre><code>def sit(self):
+	print(f&quot;{self.name} is sitting now&quot;)
+</code></pre>
+<p>实例：my_dog = dog(&lsquo;sam&rsquo;, 6)
+访问属性：my_dog.name</p>
+<p>10、继承：super（）：可调用父类方法
+class ElectrnicCar(Car):
+def <strong>int</strong>(self, make, model):
+super().<strong>init</strong>(make,model)</p>
+<p>11、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式
+with open(&rsquo;test.txt&rsquo;) as file01:
+content = file01.read
+print(content)</p>
 
           </div>
           <div class="row items-start justify-between">
@@ -1150,7 +1178,7 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
   
     <a
       class="share-link share-facebook"
-      href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fxxcdu.github.io%2fblog%2fhugo%25E5%25B8%25B8%25E8%25A7%2581%25E9%2597%25AE%25E9%25A2%2598%2f"
+      href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
       target="_blank"
       rel="noopener"
       aria-label="share facebook">
@@ -1168,7 +1196,7 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
   
     <a
       class="share-link share-twitter"
-      href="https://twitter.com/intent/tweet/?text=Share&amp;url=https%3a%2f%2fxxcdu.github.io%2fblog%2fhugo%25E5%25B8%25B8%25E8%25A7%2581%25E9%2597%25AE%25E9%25A2%2598%2f"
+      href="https://twitter.com/intent/tweet/?text=Share&amp;url=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
       target="_blank"
       rel="noopener"
       aria-label="share twitter">
@@ -1186,7 +1214,7 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
   
     <a
       class="share-link share-email"
-      href="mailto:?subject=Share&amp;body=https%3a%2f%2fxxcdu.github.io%2fblog%2fhugo%25E5%25B8%25B8%25E8%25A7%2581%25E9%2597%25AE%25E9%25A2%2598%2f"
+      href="mailto:?subject=Share&amp;body=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
       target="_self"
       rel="noopener"
       aria-label="share email">
@@ -1204,7 +1232,7 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
   
     <a
       class="share-link share-reddit"
-      href="https://reddit.com/submit/?url=https%3a%2f%2fxxcdu.github.io%2fblog%2fhugo%25E5%25B8%25B8%25E8%25A7%2581%25E9%2597%25AE%25E9%25A2%2598%2f&amp;resubmit=true&amp;title=Share"
+      href="https://reddit.com/submit/?url=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f&amp;resubmit=true&amp;title=Share"
       target="_blank"
       rel="noopener"
       aria-label="share reddit">
@@ -1385,7 +1413,7 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="更新hugo"
+            alt="Hugo-github常见问题"
             width="1096"
             height="480" />
         </picture>
@@ -1401,8 +1429,8 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
 
   
   <h4 class="mb-3">
-    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
-      更新hugo
+    <a href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+      Hugo-github常见问题
     </a>
   </h4>
   
@@ -1433,174 +1461,9 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
       </li>
     </ul>
   
-  <p class="mb-6">1、在根目录下builddrafts生成public文件夹 例如：hugo &ndash;theme=hugoplate &ndash;baseURL=&ldquo;https://xxcdu.github.io/" &ndash;buildDrafts
-2、进入public文件夹
-3、git add .
-4、git commit -m &quot; &quot;</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
-    Read More
-  </a>
-</div>
-
-              </div>
-            
-              <div class="lg:col-4 md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-  
-    
-      
-    
-
-
-    
-    
-
-
-    
-    
-      
-      
-    
-    
-    
-
-
-    
-    
-      
-      
-        
-
-        
-        
-        
-        
-        
-        
-        
-
-
-        
-        
-
-
-        <picture>
-          <source
-            
-              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_545x0_resize_q80_h2_lanczos_3.webp"
-            
-            media="(max-width: 575px)" />
-          <source
-            
-              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_600x0_resize_q80_h2_lanczos_3.webp"
-            
-            media="(max-width: 767px)" />
-          <source
-            
-              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_700x0_resize_q80_h2_lanczos_3.webp"
-            
-            media="(max-width: 991px)" />
-          <source
-            
-              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_q80_h2_lanczos_3.webp"
-             />
-          <img
-            
-              loading="lazy" decoding="async"
-              src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
-            class=" mb-6 w-full rounded img"
-            alt="start-hugo"
-            width="1096"
-            height="480" />
-        </picture>
-      
-      
-    
-    
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/blog/start-hugo/">
-      start-hugo
-    </a>
-  </h4>
-  
-  
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="/authors/xxcdu/">
-          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        
-          <a
-            href="/categories/application/"
-            class="ms-1"
-            >Application
-              ,
-            
-          </a>
-        
-          <a
-            href="/categories/data/"
-            class="ms-1"
-            >Data
-          </a>
-        
-      </li>
-    </ul>
-  
-  <p class="mb-6">条件：配置好git，下载hugo，将hugo所在目录放入环境变量
-1、创建网站：hugo new site /path/to/site
-2、克隆主题：git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c（具体方式看主题中的介绍） 主题网址：https://themes.gohugo.io/ 下载主题后进入hugo.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/start-hugo/">
+  <p class="mb-6">1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..
+2、若在github远端修改仓库代码，则在将public push时可能会出现： error: failed to push some refs to &lsquo;https://github.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
     Read More
   </a>
 </div>
@@ -1764,6 +1627,170 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数）
 3、git reset &ndash;hard HEAD@{n} 如git reset &ndash;hard 78ac8a0</p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
+    Read More
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_545x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_600x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_700x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_q80_h2_lanczos_3.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
+            class=" mb-6 w-full rounded img"
+            alt="更新hugo"
+            width="1096"
+            height="480" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+      更新hugo
+    </a>
+  </h4>
+  
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/authors/xxcdu/">
+          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/application/"
+            class="ms-1"
+            >Application
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/data/"
+            class="ms-1"
+            >Data
+          </a>
+        
+      </li>
+    </ul>
+  
+  <p class="mb-6">1、在根目录下builddrafts生成public文件夹 例如：hugo &ndash;theme=hugoplate &ndash;baseURL=&ldquo;https://xxcdu.github.io/" &ndash;buildDrafts
+2、进入public文件夹
+3、git add .
+4、git commit -m &quot; &quot;</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
     Read More
   </a>
 </div>
