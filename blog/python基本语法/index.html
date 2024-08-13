@@ -1575,7 +1575,7 @@ print(content)</p>
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="更新hugo"
+            alt="git pull 覆盖本地仓库后回滚"
             width="1096"
             height="480" />
         </picture>
@@ -1591,8 +1591,8 @@ print(content)</p>
 
   
   <h4 class="mb-3">
-    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
-      更新hugo
+    <a href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
+      git pull 覆盖本地仓库后回滚
     </a>
   </h4>
   
@@ -1623,11 +1623,10 @@ print(content)</p>
       </li>
     </ul>
   
-  <p class="mb-6">1、在根目录下builddrafts生成public文件夹 例如：hugo &ndash;theme=hugoplate &ndash;baseURL=&ldquo;https://xxcdu.github.io/" &ndash;buildDrafts
-2、进入public文件夹
-3、git add .
-4、git commit -m &quot; &quot;</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+  <p class="mb-6">1、git reflog &ndash;date=iso查看仓库变更历史（按q退出日志）
+2、寻找需要退回的版本号HEAD@{n}（日志左侧参数）
+3、git reset &ndash;hard HEAD@{n} 如git reset &ndash;hard 78ac8a0</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
     Read More
   </a>
 </div>
