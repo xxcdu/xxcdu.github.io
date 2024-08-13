@@ -1118,7 +1118,7 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
 （3）编写模版：编写learning_logs/index.html
 1、编写父模版base.html,与index.html置于同一目录下：通过<a href="【% url 'learning_logs:index' %】">learning log<a>，由于名为index的URL模式定义在urls.py中，可确保链接是最新的
 编写父模块块标签“ 【% block content %】【% endblock content %】”（content为模块名）
-2、编写子模块index.html：首句必须包括”{% extends &ldquo;learning_logs/base.html&rdquo; %}”以指定继承于哪个父模块。编写子模块块标签。
+2、编写子模块index.html：首句必须包括”【% extends &ldquo;learning_logs/base.html&rdquo; %】”以指定继承于哪个父模块。编写子模块块标签。
 （4）显示Topics中特定主题topic的详细页面，URL模式：path(&rsquo;topics/<a href="int:topic_id"
 
 
@@ -1417,7 +1417,7 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="更新hugo"
+            alt="python基本语法"
             width="1096"
             height="480" />
         </picture>
@@ -1433,8 +1433,8 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
 
   
   <h4 class="mb-3">
-    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
-      更新hugo
+    <a href="/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
+      python基本语法
     </a>
   </h4>
   
@@ -1465,11 +1465,8 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
       </li>
     </ul>
   
-  <p class="mb-6">1、在根目录下builddrafts生成public文件夹 例如：hugo &ndash;theme=hugoplate &ndash;baseURL=&ldquo;https://xxcdu.github.io/" &ndash;buildDrafts
-2、进入public文件夹
-3、git add .
-4、git commit -m &quot; &quot;</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+  <p class="mb-6">1、格式化字符串：f”······“ first_name = Bili last_name = Halidon full_name = f&quot;{first_name}{last_name}&quot; print(f&quot;Hello, {full_name.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
     Read More
   </a>
 </div>
@@ -1581,7 +1578,7 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="git pull 覆盖本地仓库后回滚"
+            alt="更新hugo"
             width="1096"
             height="480" />
         </picture>
@@ -1597,8 +1594,8 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
 
   
   <h4 class="mb-3">
-    <a href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
-      git pull 覆盖本地仓库后回滚
+    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+      更新hugo
     </a>
   </h4>
   
@@ -1629,10 +1626,11 @@ return render(request, &rsquo;learning_logs/index.html&rsquo;)
       </li>
     </ul>
   
-  <p class="mb-6">1、git reflog &ndash;date=iso查看仓库变更历史（按q退出日志）
-2、寻找需要退回的版本号HEAD@{n}（日志左侧参数）
-3、git reset &ndash;hard HEAD@{n} 如git reset &ndash;hard 78ac8a0</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
+  <p class="mb-6">1、在根目录下builddrafts生成public文件夹 例如：hugo &ndash;theme=hugoplate &ndash;baseURL=&ldquo;https://xxcdu.github.io/" &ndash;buildDrafts
+2、进入public文件夹
+3、git add .
+4、git commit -m &quot; &quot;</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
     Read More
   </a>
 </div>
