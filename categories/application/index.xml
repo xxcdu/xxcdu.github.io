@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Application on Hugoplate</title>
-    <link>//localhost:1313/categories/application/</link>
+    <link>https://xxcdu.github.io/categories/application/</link>
     <description>Recent content in Application on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/application/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xxcdu.github.io/categories/application/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django基础</title>
-      <link>//localhost:1313/blog/django%E5%9F%BA%E7%A1%80/</link>
+      <link>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/django%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</guid>
       <description>一、虚拟环境 1、建立虚拟环境 python -m venv xxcdu&#xA;2、激活虚拟环境 windows：xxcdu/Scripts/activate linux：source xxcdu/bin/activate</description>
     </item>
     <item>
       <title>git pull 覆盖本地仓库后回滚</title>
-      <link>//localhost:1313/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
+      <link>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
+      <guid>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
       <description>1、git reflog &amp;ndash;date=iso查看仓库变更历史（按q退出日志）&#xA;2、寻找需要退回的版本号HEAD@{n}（日志左侧参数）&#xA;3、git reset &amp;ndash;hard HEAD@{n} 如git reset &amp;ndash;hard 78ac8a0</description>
     </item>
     <item>
       <title>Hugo-github常见问题</title>
-      <link>//localhost:1313/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&amp;hellip;..&#xA;2、若在github远端修改仓库代码，则在将public push时可能会出现： error: failed to push some refs to &amp;lsquo;https://github.</description>
     </item>
     <item>
       <title>python基本语法</title>
-      <link>//localhost:1313/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <link>https://xxcdu.github.io/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <guid>https://xxcdu.github.io/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
       <description>1、格式化字符串：f”······“ first_name = Bili last_name = Halidon full_name = f&amp;quot;{first_name}{last_name}&amp;quot; print(f&amp;quot;Hello, {full_name.</description>
     </item>
     <item>
       <title>start-hugo</title>
-      <link>//localhost:1313/blog/start-hugo/</link>
+      <link>https://xxcdu.github.io/blog/start-hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/start-hugo/</guid>
+      <guid>https://xxcdu.github.io/blog/start-hugo/</guid>
       <description>条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站：hugo new site /path/to/site&#xA;2、克隆主题：git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c（具体方式看主题中的介绍） 主题网址：https://themes.gohugo.io/ 下载主题后进入hugo.</description>
     </item>
     <item>
       <title>更新hugo</title>
-      <link>//localhost:1313/blog/%E6%9B%B4%E6%96%B0hugo/</link>
+      <link>https://xxcdu.github.io/blog/%E6%9B%B4%E6%96%B0hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/%E6%9B%B4%E6%96%B0hugo/</guid>
+      <guid>https://xxcdu.github.io/blog/%E6%9B%B4%E6%96%B0hugo/</guid>
       <description>1、在根目录下builddrafts生成public文件夹 例如：hugo &amp;ndash;theme=hugoplate &amp;ndash;baseURL=&amp;ldquo;https://xxcdu.github.io/&#34; &amp;ndash;buildDrafts&#xA;2、进入public文件夹&#xA;3、git add .&#xA;4、git commit -m &amp;quot; &amp;quot;</description>
     </item>
   </channel>

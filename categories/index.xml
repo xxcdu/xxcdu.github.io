@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hugoplate</title>
-    <link>//localhost:1313/categories/</link>
+    <link>https://xxcdu.github.io/categories/</link>
     <description>Recent content in Categories on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xxcdu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Application</title>
-      <link>//localhost:1313/categories/application/</link>
+      <link>https://xxcdu.github.io/categories/application/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/categories/application/</guid>
+      <guid>https://xxcdu.github.io/categories/application/</guid>
       <description></description>
     </item>
     <item>
       <title>Data</title>
-      <link>//localhost:1313/categories/data/</link>
+      <link>https://xxcdu.github.io/categories/data/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/categories/data/</guid>
+      <guid>https://xxcdu.github.io/categories/data/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Author on Hugoplate</title>
-    <link>//localhost:1313/authors/</link>
+    <link>https://xxcdu.github.io/authors/</link>
     <description>Recent content in Author on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xxcdu.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>xxcdu</title>
-      <link>//localhost:1313/authors/xxcdu/</link>
+      <link>https://xxcdu.github.io/authors/xxcdu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/authors/xxcdu/</guid>
+      <guid>https://xxcdu.github.io/authors/xxcdu/</guid>
       <description>try to learn more</description>
     </item>
   </channel>
