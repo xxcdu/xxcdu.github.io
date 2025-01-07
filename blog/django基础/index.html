@@ -1073,10 +1073,99 @@
       Table of Contents
     
   </summary>
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一虚拟环境">一、虚拟环境</a></li>
+    <li><a href="#二django创建项目">二、Django创建项目</a>
+      <ol>
+        <li>
+          <ol>
+            <li>
+              <ol>
+                <li><a href="#1创建项目">1、创建项目：</a></li>
+                <li><a href="#2创建数据库">2、创建数据库：</a></li>
+                <li><a href="#3启动server">3、启动server：</a></li>
+                <li><a href="#4创建激活程序">4、创建、激活程序：</a></li>
+                <li><a href="#5django管理网站">5、Django管理网站：</a></li>
+                <li><a href="#6向管理网站注册模型">6、向管理网站注册模型：</a></li>
+                <li><a href="#7通过外键将条目与主题关联entry指条目topic指主题on_delete--modelscascad指绑定的二者级联删除">7、通过外键将条目与主题关联：(Entry指条目，Topic指主题，on_delete = models.CASCAD指绑定的二者级联删除)</a></li>
+                <li><a href="#8">8、</a></li>
+                <li><a href="#9django创建页面定义url编写视图编写模版">9、Django创建页面：定义URL、编写视图、编写模版。</a></li>
+                <li><a href="#10django50之后使用内置logout无法用get方法只能使用post方法否则返回405">10、Django5.0之后使用内置logout无法用get方法，只能使用post方法，否则返回405.</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
 </details>
 
-            
+            <h2 id="一虚拟环境">一、虚拟环境</h2>
+<p>1、建立虚拟环境</p>
+<pre tabindex="0"><code> python -m venv xxcdu
+</code></pre><p>2、激活虚拟环境 windows：</p>
+<pre tabindex="0"><code>xxcdu/Scripts/activate
+</code></pre><p>linux：</p>
+<pre tabindex="0"><code>source xxcdu/bin/activate
+</code></pre><p>3、停止使用虚拟环境：</p>
+<pre tabindex="0"><code>deactive
+</code></pre><h2 id="二django创建项目">二、Django创建项目</h2>
+<h5 id="1创建项目">1、创建项目：</h5>
+<pre tabindex="0"><code>Django-admin startproject learning_log .
+</code></pre><p>​      learning_log目录下的文件：urls.py：创建哪些页面来响应请求，wsgi.py（web服务器网关接口）帮助Django提供他创建的文件</p>
+<h5 id="2创建数据库">2、创建数据库：</h5>
+<pre tabindex="0"><code>python manage.py migrate
+</code></pre><h5 id="3启动server">3、启动server：</h5>
+<pre tabindex="0"><code>python manage.py runserver
+</code></pre><p>（若指定端口被占用，执行python manage.py runserver 8001（换端口））</p>
+<h5 id="4创建激活程序">4、创建、激活程序：</h5>
+<h6 id="1创建应用程序">（1）创建应用程序·</h6>
+<pre tabindex="0"><code>python manage.py startapp learning_logs
+</code></pre><p>​               learning_logs目录下文件：admin.py apps.py migrations models.py：定义模型 tests.py views.py</p>
+<h6 id="2在modelspy中定义模型">（2）在models.py中定义模型；</h6>
+<h6 id="3在learning_logsettings中添加程序learning_logs添加到默认应用程序上方">（3）在learning_log/settings中添加程序“learning_logs”（添加到默认应用程序上方）</h6>
+<h6 id="4让django修改数据库以存储新模型相关信息">（4）让Django修改数据库以存储新模型相关信息：</h6>
+<pre tabindex="0"><code>python manage.py makemigrations learning_logs
+</code></pre><h6 id="5迁移数据库-">（5）迁移数据库 ：</h6>
+<pre tabindex="0"><code> python manage.py migrate
+</code></pre><h6 id="6---修改网站管理数据三个步骤修改modelspy--对learning_logs调用makemigrations-让django迁移数据库">(6)   修改网站管理数据三个步骤：修改models.py;  对learning_logs调用makemigrations; 让Django迁移数据库。</h6>
+<h5 id="5django管理网站">5、Django管理网站：</h5>
+<p>​      创建超级用户：</p>
+<pre tabindex="0"><code>python manage.py createsuperuser
+</code></pre><h5 id="6向管理网站注册模型">6、向管理网站注册模型：</h5>
+<pre tabindex="0"><code>	from .models import Topic
+	admin .site.register(Topic)
+</code></pre><h5 id="7通过外键将条目与主题关联entry指条目topic指主题on_delete--modelscascad指绑定的二者级联删除">7、通过外键将条目与主题关联：(Entry指条目，Topic指主题，on_delete = models.CASCAD指绑定的二者级联删除)</h5>
+<pre tabindex="0"><code>	class Entry(models.Model):
+		topic = models.ForeignKey(Topic, on_delete = models.CASCAD)
+</code></pre><h5 id="8">8、</h5>
+<pre tabindex="0"><code>Django shell：python manage.py shell
+</code></pre><p>​	.all()函数获取该模型所有实例：topics = Topic.objects.all( ) 返回一个查询集的列表。</p>
+<h5 id="9django创建页面定义url编写视图编写模版">9、Django创建页面：定义URL、编写视图、编写模版。</h5>
+<p>​	定义URL将浏览器请求与URL匹配，每个URL被映射到特定视图，视图函数通过模版来渲染页面。</p>
+<h6 id="1映射url">（1）映射URL：</h6>
+<p>​		1、在learning_log目录下的urls.py中添加整个项目中应用程序的URL。
+​		2、添加模块admin.site.urls,定义可在管理网站请求的所有URL :</p>
+<pre tabindex="0"><code>path(&#39;admin/&#39;, admin.site.urls)
+</code></pre><p>​		3、添加应用learning_logs的URL：</p>
+<pre tabindex="0"><code>path(&#39;&#39;, include(&#39;learning_logs.urls&#39;))
+</code></pre><p>​		4、在应用learning_logs	中添加urls.py,添加应用中文件的path：</p>
+<pre tabindex="0"><code>path（&#39; &#39; , views.index, name=&#39;index&#39;）#该对象看作一个URL模式
+</code></pre><p>​		path( )函数三个参数：第一个参数是字符串path（&rsquo; &lsquo;在本地即https://localhost:8000/）；第二个参数指定要调用views.py中的哪一个函数，此处是views.py中的index；第三个是为该URL指定名称“index”便于引用。</p>
+<h6 id="2编写视图">（2）编写视图：</h6>
+<p>​		在应用learning_logs中的views.py编写index函数，在index函数中调用render函数使用模版渲染。
+​		def index(request):#request为Django从服务器接收到的request对象
+​			return render(request, &rsquo;learning_logs/index.html&rsquo;)</p>
+<h6 id="3编写模版">（3）编写模版：</h6>
+<p>​		编写learning_logs/index.html
+​		1、编写父模版base.html,与index.html置于同一目录下：通过“[a href=&quot;[%  url &rsquo;learning_logs:index&rsquo; %]&quot;]learning log[/a]”，由于名为index的URL模式定义在urls.py中，可确保链接是最新的编写父模块块标签“ 【% block content %】【% endblock content %】”（content为模块名）
+​		2、编写子模块index.html：首句必须包括”【% extends &ldquo;learning_logs/base.html&rdquo; %】”以指定继承于哪个父模块。编写子模块块标签。</p>
+<h6 id="4显示topics中特定主题topic的详细页面url模式">（4）显示Topics中特定主题topic的详细页面，URL模式：</h6>
+<p>​		path(&rsquo;topics/【int:topic_id】/&rsquo;, vies.topic, name = &rsquo;topic&rsquo;) ，（例如http://localhost:8000/topicd/1）编写视图函数、模版（‘{’与&rsquo;&lt;&lsquo;符号用&rsquo;【&lsquo;代替）</p>
+<h5 id="10django50之后使用内置logout无法用get方法只能使用post方法否则返回405">10、Django5.0之后使用内置logout无法用get方法，只能使用post方法，否则返回405.</h5>
+
           </div>
           <div class="row items-start justify-between">
             
@@ -1365,7 +1454,7 @@
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="Hugo-github常见问题"
+            alt="更新hugo"
             width="1096"
             height="480" />
         </picture>
@@ -1381,8 +1470,8 @@
 
   
   <h4 class="mb-3">
-    <a href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
-      Hugo-github常见问题
+    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+      更新hugo
     </a>
   </h4>
   
@@ -1413,10 +1502,12 @@
       </li>
     </ul>
   
-  <p class="mb-6">1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..
-2、若在github远端修改仓库代码，则在将public push时可能会出现：
-error: failed to push some refs to &#39;https://github.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+  <p class="mb-6">1、
+在根目录下builddrafts生成public文件夹，例如：
+hugo --theme=hugoplate --baseURL=&#34;https://xxcdu.github.io/&#34; --buildDrafts 2、进入public文件夹
+3、
+git add .</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
     Read More
   </a>
 </div>
@@ -1691,7 +1782,7 @@ error: failed to push some refs to &#39;https://github.</p>
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="更新hugo"
+            alt="python基本语法"
             width="1096"
             height="480" />
         </picture>
@@ -1707,8 +1798,8 @@ error: failed to push some refs to &#39;https://github.</p>
 
   
   <h4 class="mb-3">
-    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
-      更新hugo
+    <a href="/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
+      python基本语法
     </a>
   </h4>
   
@@ -1739,12 +1830,8 @@ error: failed to push some refs to &#39;https://github.</p>
       </li>
     </ul>
   
-  <p class="mb-6">1、
-在根目录下builddrafts生成public文件夹，例如：
-hugo --theme=hugoplate --baseURL=&#34;https://xxcdu.github.io/&#34; --buildDrafts 2、进入public文件夹
-3、
-git add .</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+  <p class="mb-6">1、格式化字符串：f”······“ ​	first_name = Bili ​	last_name = Halidon ​	full_name = f&quot;{first_name}{last_name}&quot; ​	print(f&quot;Hello, {full_name.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
     Read More
   </a>
 </div>
