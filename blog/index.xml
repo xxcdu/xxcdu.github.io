@@ -30,10 +30,10 @@
       <description>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&amp;hellip;..&#xA;2、若在github远端修改仓库代码，则在将public push时可能会出现：&#xA;error: failed to push some refs to &amp;#39;https://github.</description>
     </item>
     <item>
-      <title>python基本语法</title>
-      <link>//localhost:1313/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <title>python基础</title>
+      <link>//localhost:1313/blog/python%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <guid>//localhost:1313/blog/python%E5%9F%BA%E7%A1%80/</guid>
       <description>1、格式化字符串：f”······“ first_name = Bili&#xD;​&#x9;last_name = Halidon&#xD;​&#x9;full_name = f&amp;#34;{first_name}{last_name}&amp;#34;&#xD;​&#x9;print(f&amp;#34;Hello, {full_name.</description>
     </item>
     <item>
