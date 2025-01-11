@@ -4,7 +4,7 @@
   class=""
   lang="en-us"
   itemtype="http://schema.org/WebPage">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8" />
 
@@ -72,7 +72,7 @@
 
 
 
-  <base href="https://xxcdu.github.io/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
+  <base href="//localhost:1313/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
 
 
 
@@ -161,8 +161,8 @@
       
       
       
-        <meta property="og:image" content="https://xxcdu.github.io/images/image-placeholder.png" />
-        <meta name="twitter:image" content="https://xxcdu.github.io/images/image-placeholder.png" />
+        <meta property="og:image" content="//localhost:1313/images/image-placeholder.png" />
+        <meta name="twitter:image" content="//localhost:1313/images/image-placeholder.png" />
         <meta
           name="twitter:card"
           content="summary_large_image" />
@@ -189,7 +189,7 @@
 <meta property="og:title" content="python基本语法" />
 <meta property="og:description" content="this is meta description" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://xxcdu.github.io/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
+<meta property="og:url" content="//localhost:1313/blog/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
 
 
 <meta name="twitter:title" content="python基本语法" />
@@ -216,7 +216,7 @@
 
 
 <script>
-  let indexURL = "https://xxcdu.github.io/searchindex.json";
+  let indexURL = "//localhost:1313/searchindex.json";
   let includeSectionsInSearch = ["blog"];
   let search_no_results = "No results for";
   let search_initial_message = "Type something to search..";
@@ -326,8 +326,8 @@
 
 
 <link
-  href="/css/style.min.2c50b6a5e59a48092f6941d22e8666e6fb20ec9a0570693e4e2b7990227952c2.css"
-  integrity="sha256-LFC2peWaSAkvaUHSLoZm5vsg7JoFcGk+Tit5kCJ5UsI="
+  href="/css/style.css"
+  integrity=""
   rel="stylesheet" />
 
 
@@ -335,8 +335,8 @@
   defer
   async
   rel="stylesheet"
-  href="/css/style-lazy.min.5d85e889fd5f5b28f9387aeade847fcb0a66d76a99a985ab4cdae3d37cf21557.css"
-  integrity="sha256-XYXoif1fWyj5OHrq3oR/ywpm12qZqYWrTNrj03zyFVc="
+  href="/css/style-lazy.css"
+  integrity=""
   media="print"
   onload="this.media='all'; this.onload=null;" />
 
@@ -350,7 +350,18 @@
 
 
 
+
+
       
+      <div
+  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
+  <span class="block sm:hidden">all</span>
+  <span class="hidden sm:block md:hidden">sm</span>
+  <span class="hidden md:block lg:hidden">md</span>
+  <span class="hidden lg:block xl:hidden">lg</span>
+  <span class="hidden xl:block 2xl:hidden">xl</span>
+  <span class="hidden 2xl:block">2xl</span>
+</div>
 
     
 
@@ -1081,15 +1092,32 @@
           <ol>
             <li><a href="#1格式化字符串f">1、格式化字符串：f”······“</a></li>
             <li><a href="#2列表-a--a-1-abc">2、列表 a = [&lsquo;a&rsquo;, 1, &lsquo;abc&rsquo;]</a></li>
-            <li><a href="#3复制列表-a--b">3、复制列表 a = b[:]</a></li>
-            <li><a href="#4元组a--1-2-3">4、元组a = （1, 2, 3）</a></li>
-            <li><a href="#5字典-dic--a1b2">5、字典： dic = {&lsquo;a&rsquo;:1,&lsquo;b&rsquo;:2}</a></li>
-            <li><a href="#6防止函数修改字符串">6、防止函数修改字符串：</a></li>
-            <li><a href="#7传递任意数量实参">7、传递任意数量实参：</a></li>
-            <li><a href="#8使用任意数量的关键字实参键值对">8、使用任意数量的关键字实参（键值对）：</a></li>
-            <li><a href="#9类">9、类：</a></li>
-            <li><a href="#10继承super">10、继承：super（）：</a></li>
-            <li><a href="#11打开读取整个文件open01txt-w写模式r读模式r读写模式">11、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</a></li>
+            <li><a href="#3元组a--1-2-3">3、元组a = （1, 2, 3）</a></li>
+            <li><a href="#4字典-dic--a1b2">4、字典： dic = {&lsquo;a&rsquo;:1,&lsquo;b&rsquo;:2}</a></li>
+            <li><a href="#5函数">5、函数：</a>
+              <ol>
+                <li></li>
+              </ol>
+            </li>
+            <li><a href="#6类">6、类：</a>
+              <ol>
+                <li><a href="#1定义">（1）定义</a></li>
+                <li><a href="#2继承">（2）继承：</a></li>
+              </ol>
+            </li>
+            <li><a href="#7迭代器">7、迭代器：</a></li>
+            <li><a href="#8打开读取整个文件open01txt-w写模式r读模式r读写模式">8、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</a></li>
+            <li><a href="#9三目运算为真结果-if-条件-else-为假结果">9、三目运算：为真结果 if 条件 else 为假结果</a></li>
+            <li><a href="#10异常">10、异常：</a>
+              <ol>
+                <li></li>
+              </ol>
+            </li>
+            <li><a href="#11文件操作">11、文件操作：</a>
+              <ol>
+                <li></li>
+              </ol>
+            </li>
           </ol>
         </li>
       </ol>
@@ -1099,59 +1127,229 @@
 </details>
 
             <h4 id="1格式化字符串f">1、格式化字符串：f”······“</h4>
-<p>​	first_name = Bili
+<pre tabindex="0"><code>	first_name = Bili
 ​	last_name = Halidon
-​	full_name = f&quot;{first_name}{last_name}&quot;
-​	print(f&quot;Hello, {full_name.title()}&quot;)</p>
-<h4 id="2列表-a--a-1-abc">2、列表 a = [&lsquo;a&rsquo;, 1, &lsquo;abc&rsquo;]</h4>
-<h4 id="3复制列表-a--b">3、复制列表 a = b[:]</h4>
-<p>a = b是引用同一个列表      实验：
-a = [&lsquo;a&rsquo;, 1, &ldquo;b&rdquo;]
+​	full_name = f&#34;{first_name}{last_name}&#34;
+​	print(f&#34;Hello, {full_name.title()}&#34;)
+</code></pre><h4 id="2列表-a--a-1-abc">2、列表 a = [&lsquo;a&rsquo;, 1, &lsquo;abc&rsquo;]</h4>
+<p>(1)添加元素：</p>
+<p>​	append（）方法：向列表中添加元素(从后面插入)。a.append(6)</p>
+<p>​	extend（）方法：添加多个元素（尾插）。a.exten([8, 9])</p>
+<p>​	insert（x, y)：在指定位置插入。 将7插到6和8之间：insert（7, 7）</p>
+<p>(2)交换a[1]、a[3]：a[1]，a[3] = a[3]，a[1]</p>
+<p>(3)删除元素：</p>
+<p>​	remove（）：删除指定元素。a.remove(&lsquo;abc&rsquo;)</p>
+<p>​	pop( )：探出指定索引的元素。b = a.pop(1)</p>
+<p>​	del语句：del a[0]。</p>
+<p>(4)改变步长：切片：</p>
+<p>​	list[0: 9: 2]，其中2为步长</p>
+<p>(5)&quot;+&quot;:拼接列表</p>
+<p>​	&ldquo;*&quot;:重复操作符，lists * 3就是把lists复制三份拼到一个列表里。</p>
+<p>(6）复制列表 a = b[:]</p>
+<p>​	a = b是引用同一个列表      实验：</p>
+<pre tabindex="0"><code>a = [&#39;a&#39;, 1, &#34;b&#34;]
 b = a
 c = a[:]
-a.append(&lsquo;c&rsquo;)
-print(f&quot;a = {a}&quot;)
-print(f&quot;b = {b}&quot;)
-print(f&quot;c = {c}&quot;)</p>
-<p>结果：
-a = [&lsquo;a&rsquo;, 1, &lsquo;b&rsquo;, &lsquo;c&rsquo;]
-b = [&lsquo;a&rsquo;, 1, &lsquo;b&rsquo;, &lsquo;c&rsquo;]
-c = [&lsquo;a&rsquo;, 1, &lsquo;b&rsquo;]</p>
-<h4 id="4元组a--1-2-3">4、元组a = （1, 2, 3）</h4>
-<h4 id="5字典-dic--a1b2">5、字典： dic = {&lsquo;a&rsquo;:1,&lsquo;b&rsquo;:2}</h4>
-<p>​	添加键值对：dic[&lsquo;c&rsquo;] = 3
-​	删除键值对：del dic[&lsquo;c&rsquo;]
-​	遍历键值对：for key, value in dic():
-​					print(f&quot;{key}:{value}&quot;)
-​	遍历所有键：for i in dic.keys():
+a.append(&#39;c&#39;)
+print(f&#34;a = {a}&#34;)
+print(f&#34;b = {b}&#34;)
+print(f&#34;c = {c}&#34;)
+</code></pre><p>结果：</p>
+<pre tabindex="0"><code>a = [&#39;a&#39;, 1, &#39;b&#39;, &#39;c&#39;]
+b = [&#39;a&#39;, 1, &#39;b&#39;, &#39;c&#39;]
+c = [&#39;a&#39;, 1, &#39;b&#39;]
+</code></pre><h4 id="3元组a--1-2-3">3、元组a = （1, 2, 3）</h4>
+<p>解包，取得元组所有值：</p>
+<p>li = (1, 2, 3, 4)</p>
+<p>a,b,c,d = li</p>
+<p>a,*b = li</p>
+<h4 id="4字典-dic--a1b2">4、字典： dic = {&lsquo;a&rsquo;:1,&lsquo;b&rsquo;:2}</h4>
+<p>（1）添加键值对：</p>
+<pre tabindex="0"><code>dic[&#39;c&#39;] = 3
+</code></pre><p>（2）删除键值对：</p>
+<pre tabindex="0"><code>del dic[&#39;c&#39;]
+</code></pre><p>（3）遍历键值对：</p>
+<pre tabindex="0"><code>for key, value in dic():
+​					print(f&#34;{key}:{value}&#34;)
+</code></pre><p>（4）遍历所有键：</p>
+<pre tabindex="0"><code>for i in dic.keys():
 ​					print(i)
-​	遍历所有值：for i in dic.values():</p>
-<h4 id="6防止函数修改字符串">6、防止函数修改字符串：</h4>
-<p>使用切片副本。function_name(list_name[ : ])</p>
-<h4 id="7传递任意数量实参">7、传递任意数量实参：</h4>
-<p>def make_pizza(size, *toppings):······</p>
-<h4 id="8使用任意数量的关键字实参键值对">8、使用任意数量的关键字实参（键值对）：</h4>
-<p>def build_profile(first, last, **user_info):······</p>
-<h4 id="9类">9、类：</h4>
-<p>class dog:
-def <strong>init</strong>(self, name, age):
-self.name = name
-self.age = age</p>
-<pre><code>def sit(self):
-	print(f&quot;{self.name} is sitting now&quot;)
-</code></pre>
-<p>实例：my_dog = dog(&lsquo;sam&rsquo;, 6)
-访问属性：my_dog.name</p>
-<h4 id="10继承super">10、继承：super（）：</h4>
-<p>可调用父类方法
-class ElectrnicCar(Car):
-def <strong>int</strong>(self, make, model):
-super().<strong>init</strong>(make,model)</p>
-<h4 id="11打开读取整个文件open01txt-w写模式r读模式r读写模式">11、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</h4>
-<p>with open(&rsquo;test.txt&rsquo;) as file01:
-content = file01.read
-print(content)</p>
+</code></pre><p>（5）遍历所有值：</p>
+<pre tabindex="0"><code>for i in dic.values():
+</code></pre><h4 id="5函数">5、函数：</h4>
+<h6 id="1防止函数修改字符串">（1）防止函数修改字符串：</h6>
+<p>使用切片副本。</p>
+<pre tabindex="0"><code>function_name(list_name[ : ])
+</code></pre><h6 id="2传递任意数量实参">（2）传递任意数量实参：</h6>
+<pre tabindex="0"><code>def make_pizza(size, *toppings):······
+</code></pre><h6 id="3使用任意数量的关键字实参键值对">（3）使用任意数量的关键字实参（键值对）：</h6>
+<pre tabindex="0"><code>def build_profile(first, last, **user_info):······
+</code></pre><h6 id="4map函数放入另一个函数和可迭代对象其中每个元素都会执行该函数">（4）map()函数：放入另一个函数和可迭代对象，其中每个元素都会执行该函数</h6>
+<pre tabindex="0"><code>list = [1,2,3]
 
+def plus(x):
+
+​	return x+5
+
+mp = map(plus, list)
+</code></pre><h6 id="5函数嵌套中使用nonlocal关键字声明该变量不是一个局部变量nonlocal-x">（5）函数嵌套中，使用nonlocal关键字声明该变量不是一个局部变量：nonlocal x</h6>
+<pre tabindex="0"><code>def funX():
+
+​	x = 5
+
+​	def funY():
+
+​		nonlocal x
+
+​		x = x+1
+
+​	return funY()
+</code></pre><h6 id="6装饰器语法糖">（6）装饰器：@语法糖</h6>
+<pre tabindex="0"><code>def log(func):
+
+​	def wapper():
+
+​		print(&#39;是史&#39;)
+
+​		func()
+
+​	return wapper
+
+
+
+@log
+
+def eat( ):
+
+​	print(&#39;开吃&#39;)
+</code></pre><p>#相当于log（eat（）），使用时注意参数数量一致。</p>
+<pre tabindex="0"><code>@buffer
+
+@log
+
+def eat():
+
+​	pass
+</code></pre><p>#相当于buffer（log（eat（）））</p>
+<h6 id="7filtera-b函数过滤器">（7）filter（a, b）函数	：过滤器。</h6>
+<p>参数a为要过滤出的数据，b为可迭代对象，在b中过滤出a。</p>
+<pre tabindex="0"><code>temp = filter(None, [1, 0, True])  # 第一个参数为None时将第二个参数（即该数组中）为True的值筛选出来。
+
+结果：[1, True]
+</code></pre><h6 id="8匿名函数func--lambda-形参返回值表达式">（8）匿名函数：func = lambda: 形参：返回值（表达式）</h6>
+<p>例：</p>
+<pre tabindex="0"><code>func = lambda a+b : sam
+
+func = a,b,c=10 : a,b,c # 默认参数要写在非默认后面
+</code></pre><h4 id="6类">6、类：</h4>
+<h5 id="1定义">（1）定义</h5>
+<pre tabindex="0"><code>class dog:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+
+​	def sit(self):
+​		print(f&#34;{self.name} is sitting now&#34;)
+</code></pre><p>实例：my_dog = dog(&lsquo;sam&rsquo;, 6)
+访问属性：my_dog.name</p>
+<h5 id="2继承">（2）继承：</h5>
+<h6 id="一子类中定义与父类同名的方法或属性会覆盖父类包括构造方法_-_-init-_-_-以构造方法为例为继承父类init的同时增添或修改需要">（一）子类中定义与父类同名的方法或属性会覆盖父类，包括构造方法_ _ init _ _( )，以构造方法为例，为继承父类init的同时增添或修改，需要：</h6>
+<pre tabindex="0"><code>class child(parent):
+
+​	def _ _ init _ _(self):
+
+​		def parent._ _ init _ _(self)
+</code></pre><p>或使用super()函数</p>
+<pre tabindex="0"><code>class ElectrnicCar(Car):
+	def __int__(self, make, model):
+		super().__init__(make,model)
+</code></pre><h6 id="二多重继承慎用">（二）多重继承：（慎用）</h6>
+<pre tabindex="0"><code>class child(parent1, parent2):
+
+​	pass
+</code></pre><h6 id="三与类有关内置函数">（三）与类有关内置函数：</h6>
+<p>（1）issubclass(class, classinfo)：若第一个参数class是第二个参数classinfo的子类，则返回True；classinfo可以是类对象组成的元组，只要class是其中任意一个的子类即为True</p>
+<p>（2）isinstance(object, classinfo)：若object是classinfo或其子类的一个实例，则为True</p>
+<p>（3）hasattr(object, name)：测试对象object里是否有名为name的属性</p>
+<p>（4）getattr(object, name[,default])：返回object的指定属性name的值，若不存在则返回default的内容</p>
+<p>（5）setattr(object, name, value)：设置对象中指定属性的值</p>
+<p>（6）delattr(object, name)：删除对象中指定属性的值</p>
+<p>（7）property( )：通过属性设置属性</p>
+<h6 id="四魔法方法">（四）魔法方法：</h6>
+<p>​	_ _ init _ _()：构造方法，通常用来自定义对象的初始化操作。</p>
+<h4 id="7迭代器">7、迭代器：</h4>
+<p>iter( )方法：对一个可迭代对象调用该方法可获得其迭代器</p>
+<p>next（）方法：迭代器返回下一个值</p>
+<h4 id="8打开读取整个文件open01txt-w写模式r读模式r读写模式">8、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</h4>
+<pre tabindex="0"><code>with open(&#39;test.txt&#39;) as file01:
+	content = file01.read
+print(content)
+</code></pre><h4 id="9三目运算为真结果-if-条件-else-为假结果">9、三目运算：为真结果 if 条件 else 为假结果</h4>
+<pre tabindex="0"><code>print(&#34;a比b小&#34;) if a&lt;b else print(&#34;a大于等于b&#34;)
+
+comp = lambda a,b : &#34;a比b小&#34;  if a&lt;b else print(&#34;a大于等于b&#34;)
+print(comp(a,b))#结合匿名函数
+</code></pre><h4 id="10异常">10、异常：</h4>
+<h6 id="一创建一个exception对象设置异常提示信息通过raise抛出exception对象包含所有类型异常">（一）创建一个Exception对象，设置异常提示信息，通过raise抛出。Exception对象包含所有类型异常。</h6>
+<pre tabindex="0"><code>try：
+
+​	可能异常的代码
+
+except （异常类型名1， 异常类型名2）as 变量名：
+
+​	出现异常时执行的代码
+</code></pre><pre tabindex="0"><code>try：
+
+​	可能发生的
+
+except 异常类型：
+
+​	捕获到异常时执行的代码
+
+else：
+
+​	无异常时执行的代码
+
+finally：
+
+​	无论如何都会执行的代码
+</code></pre><p>示例：</p>
+<pre tabindex="0"><code>def fun():
+    a = input(&#34;psw:&#34;)
+    if len(a) == 6:
+        return &#34;ojbk&#34;
+    raise Exception(&#34;fuck&#34;)#密码长度为6位则没毛病
+
+try:
+    print(fun())
+except Exception as e:
+    print(e)
+</code></pre><h6 id="二常见异常">（二）常见异常：</h6>
+<p>​		（1）AssertionError：断言语句失败；（2）AttributeError：尝试访问未知的对象属性；（3）IndexError：索引超出序列范围（4）KeyError：字典中查找一个不存在的关键字；（5）NameError：尝试访问一个不存在的变量；（6）OSError：操作系统异常；（7）SyntaxError：Python语法错误；（8）TypeError：不同类型的无效操作；（9）ZeroDivisionError：除数为0。</p>
+<h4 id="11文件操作">11、文件操作：</h4>
+<h6 id="一with语句可抽象出文件操作中的tryexcept等会自动关闭打开的文件">（一）with语句：可抽象出文件操作中的try、except等，会自动关闭打开的文件:</h6>
+<pre tabindex="0"><code>try:
+
+​	with open(&#39;data.txt&#39;, &#39;w&#39;) as f:
+
+​		for each_line in f:
+
+​			print(each_line)#读取整个文件
+
+except OSError as reason:
+
+​	print(reason)
+</code></pre><h6 id="二readline方法从文件中读取一整行字符串还可将整个文件置于一个字符串中读取list-f-">（二）readline（）方法：从文件中读取一整行字符串。还可将整个文件置于一个字符串中读取：list( f )</h6>
+<pre tabindex="0"><code>写入：
+
+with open(&#39;data.txt&#39;, &#39;w&#39;) as f:
+
+​	f.write(&#34;待写入的数据&#34;) #“w”模式下写入会覆盖之前的数据
+
+with open(&#39;data.txt&#39;, &#39;a&#39;) as f:
+
+​	f.write(&#34;待写入的数据&#34;) #“a”模式下才是内容上追加。
+</code></pre>
           </div>
           <div class="row items-start justify-between">
             
@@ -1205,7 +1403,7 @@ print(content)</p>
   
     <a
       class="share-link share-facebook"
-      href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
+      href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
       target="_blank"
       rel="noopener"
       aria-label="share facebook">
@@ -1223,7 +1421,7 @@ print(content)</p>
   
     <a
       class="share-link share-twitter"
-      href="https://twitter.com/intent/tweet/?text=Share&amp;url=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
+      href="https://twitter.com/intent/tweet/?text=Share&amp;url=%2f%2flocalhost%3a1313%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
       target="_blank"
       rel="noopener"
       aria-label="share twitter">
@@ -1241,7 +1439,7 @@ print(content)</p>
   
     <a
       class="share-link share-email"
-      href="mailto:?subject=Share&amp;body=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
+      href="mailto:?subject=Share&amp;body=%2f%2flocalhost%3a1313%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f"
       target="_self"
       rel="noopener"
       aria-label="share email">
@@ -1259,7 +1457,7 @@ print(content)</p>
   
     <a
       class="share-link share-reddit"
-      href="https://reddit.com/submit/?url=https%3a%2f%2fxxcdu.github.io%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f&amp;resubmit=true&amp;title=Share"
+      href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fblog%2fpython%25E5%259F%25BA%25E6%259C%25AC%25E8%25AF%25AD%25E6%25B3%2595%2f&amp;resubmit=true&amp;title=Share"
       target="_blank"
       rel="noopener"
       aria-label="share reddit">
@@ -1440,7 +1638,7 @@ print(content)</p>
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="git pull 覆盖本地仓库后回滚"
+            alt="Hugo-github常见问题"
             width="1096"
             height="480" />
         </picture>
@@ -1456,8 +1654,8 @@ print(content)</p>
 
   
   <h4 class="mb-3">
-    <a href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
-      git pull 覆盖本地仓库后回滚
+    <a href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+      Hugo-github常见问题
     </a>
   </h4>
   
@@ -1488,8 +1686,10 @@ print(content)</p>
       </li>
     </ul>
   
-  <p class="mb-6">1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &ndash;hard 78ac8a0</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
+  <p class="mb-6">1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..
+2、若在github远端修改仓库代码，则在将public push时可能会出现：
+error: failed to push some refs to &#39;https://github.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
     Read More
   </a>
 </div>
@@ -1601,7 +1801,7 @@ print(content)</p>
               loading="lazy" decoding="async"
               src="/images/image-placeholder_huf5f2d24635a285cfc2259aa9741acb2a_4881_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="start-hugo"
+            alt="git pull 覆盖本地仓库后回滚"
             width="1096"
             height="480" />
         </picture>
@@ -1617,8 +1817,8 @@ print(content)</p>
 
   
   <h4 class="mb-3">
-    <a href="/blog/start-hugo/">
-      start-hugo
+    <a href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
+      git pull 覆盖本地仓库后回滚
     </a>
   </h4>
   
@@ -1649,10 +1849,8 @@ print(content)</p>
       </li>
     </ul>
   
-  <p class="mb-6">条件：配置好git，下载hugo，将hugo所在目录放入环境变量
-1、创建网站： hugo new site /path/to/site;
-2、克隆主题： git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c;（具体方式看主题中的介绍） 主题网址：https://themes.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/start-hugo/">
+  <p class="mb-6">1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &ndash;hard 78ac8a0</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
     Read More
   </a>
 </div>
@@ -2111,23 +2309,20 @@ git add .</p>
 
 
 
-  
-  
-
 
 
 <script
   crossorigin="anonymous"
-  integrity="sha256-QyKANL8qsiU27xgAU9uCTVC7WUQCnRPb5SSdNFDofSY="
-  src="/js/script.min.43228034bf2ab22536ef180053db824d50bb5944029d13dbe5249d3450e87d26.js"></script>
+  integrity=""
+  src="/js/script.js"></script>
 
 
 <script
   defer
   async
   crossorigin="anonymous"
-  integrity="sha256-w&#43;aS42D2&#43;B&#43;Jix&#43;joZ7pAua1vbu/pRK/IhoP55b8n3w="
-  src="/js/script-lazy.min.c3e692e360f6f81f898b1fa3a19ee902e6b5bdbbbfa512bf221a0fe796fc9f7c.js"></script>
+  integrity=""
+  src="/js/script-lazy.js"></script>
 
 
 

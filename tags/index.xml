@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugoplate</title>
-    <link>https://xxcdu.github.io/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xxcdu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nextjs</title>
-      <link>https://xxcdu.github.io/tags/nextjs/</link>
+      <link>//localhost:1313/tags/nextjs/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/tags/nextjs/</guid>
+      <guid>//localhost:1313/tags/nextjs/</guid>
       <description></description>
     </item>
     <item>
       <title>Tailwind</title>
-      <link>https://xxcdu.github.io/tags/tailwind/</link>
+      <link>//localhost:1313/tags/tailwind/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/tags/tailwind/</guid>
+      <guid>//localhost:1313/tags/tailwind/</guid>
       <description></description>
     </item>
   </channel>
