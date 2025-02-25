@@ -20,7 +20,7 @@
       <link>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
       <guid>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</guid>
-      <description></description>
+      <description>在线php手册：www.php.net/manual&#xA;1、php标签：&#xA;&amp;lt;?php&#xD;phpinfo()； #列举安装在特定服务器上的PHP的具体细节&#xD;?&amp;gt; php每一行后都要有分号“;”&#xA;2、单行注释：//或#&#xA;​&#x9;多行注释：/* */</description>
     </item>
     <item>
       <title>Django基础</title>
