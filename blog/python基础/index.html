@@ -1095,14 +1095,13 @@
               </ol>
             </li>
             <li><a href="#7迭代器">7、迭代器：</a></li>
-            <li><a href="#8打开读取整个文件open01txt-w写模式r读模式r读写模式">8、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</a></li>
-            <li><a href="#9三目运算为真结果-if-条件-else-为假结果">9、三目运算：为真结果 if 条件 else 为假结果</a></li>
-            <li><a href="#10异常">10、异常：</a>
+            <li><a href="#8三目运算为真结果-if-条件-else-为假结果">8、三目运算：为真结果 if 条件 else 为假结果</a></li>
+            <li><a href="#9异常">9、异常：</a>
               <ol>
                 <li></li>
               </ol>
             </li>
-            <li><a href="#11文件操作">11、文件操作：</a>
+            <li><a href="#10文件操作">10、文件操作：</a>
               <ol>
                 <li></li>
               </ol>
@@ -1230,6 +1229,35 @@ def eat():
 <pre tabindex="0"><code>func = lambda a+b : sam
 
 func = a,b,c=10 : a,b,c # 默认参数要写在非默认后面
+</code></pre><h6 id="9常见函数">（9）常见函数</h6>
+<p>input（）：注意输入的值为字符串str类型，若要使用数值需要int（）强制转换</p>
+<pre tabindex="0"><code>a = input(&#34;输入a的值&#34;)
+</code></pre><p>python生成随机数</p>
+<pre tabindex="0"><code>import random
+
+random.random()：返回0到1之间的随机浮点数
+
+random.uniform(a,b)：返回a到b之间的随机浮点数
+
+random.randint(a,b)：返回一个随机的整数
+
+random.randrange([start, stop, 步长)：返回指定递增基数集合中的一个随机数
+
+random.choice(sequence)从 sequence （列表、元组或字符串）中返回一个随机数（若传入的值 sequence 为空，则会引发 IndexError 异常）
+
+random.shuffle（list_name）将列表中顺序打乱
+
+random.sample(squence, K)从指定序列中随机获取 K 个元素作为一个片段返回
+</code></pre><p>格式化字符串：</p>
+<pre tabindex="0"><code>text = &#34;使用f&#34;
+
+f&#34;{text}:可以以此格式化&#34;
+
+结果：使用f : 可以以此格式化
+</code></pre><p>字符串转化为列表:splite( )方法</p>
+<pre tabindex="0"><code>citys = &#39;成都、绵阳、自贡&#39;
+city_list = citys.split(&#39;、&#39;) #以逗号、为分割依据
+结果：city_list = [&#39;成都&#39;、&#39;绵阳&#39;、&#39;自贡&#39;]
 </code></pre><h4 id="6类">6、类：</h4>
 <h5 id="1定义">（1）定义</h5>
 <pre tabindex="0"><code>class dog:
@@ -1269,16 +1297,12 @@ func = a,b,c=10 : a,b,c # 默认参数要写在非默认后面
 <h4 id="7迭代器">7、迭代器：</h4>
 <p>iter( )方法：对一个可迭代对象调用该方法可获得其迭代器</p>
 <p>next（）方法：迭代器返回下一个值</p>
-<h4 id="8打开读取整个文件open01txt-w写模式r读模式r读写模式">8、打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</h4>
-<pre tabindex="0"><code>with open(&#39;test.txt&#39;) as file01:
-	content = file01.read
-print(content)
-</code></pre><h4 id="9三目运算为真结果-if-条件-else-为假结果">9、三目运算：为真结果 if 条件 else 为假结果</h4>
+<h4 id="8三目运算为真结果-if-条件-else-为假结果">8、三目运算：为真结果 if 条件 else 为假结果</h4>
 <pre tabindex="0"><code>print(&#34;a比b小&#34;) if a&lt;b else print(&#34;a大于等于b&#34;)
 
 comp = lambda a,b : &#34;a比b小&#34;  if a&lt;b else print(&#34;a大于等于b&#34;)
 print(comp(a,b))#结合匿名函数
-</code></pre><h4 id="10异常">10、异常：</h4>
+</code></pre><h4 id="9异常">9、异常：</h4>
 <h6 id="一创建一个exception对象设置异常提示信息通过raise抛出exception对象包含所有类型异常">（一）创建一个Exception对象，设置异常提示信息，通过raise抛出。Exception对象包含所有类型异常。</h6>
 <pre tabindex="0"><code>try：
 
@@ -1315,11 +1339,15 @@ except Exception as e:
     print(e)
 </code></pre><h6 id="二常见异常">（二）常见异常：</h6>
 <p>​		（1）AssertionError：断言语句失败；（2）AttributeError：尝试访问未知的对象属性；（3）IndexError：索引超出序列范围（4）KeyError：字典中查找一个不存在的关键字；（5）NameError：尝试访问一个不存在的变量；（6）OSError：操作系统异常；（7）SyntaxError：Python语法错误；（8）TypeError：不同类型的无效操作；（9）ZeroDivisionError：除数为0。</p>
-<h4 id="11文件操作">11、文件操作：</h4>
-<h6 id="一with语句可抽象出文件操作中的tryexcept等会自动关闭打开的文件">（一）with语句：可抽象出文件操作中的try、except等，会自动关闭打开的文件:</h6>
+<h4 id="10文件操作">10、文件操作：</h4>
+<h6 id="一打开读取整个文件open01txt-w写模式r读模式r读写模式">（一）打开读取整个文件：open(&lsquo;01.txt&rsquo;, &lsquo;w&rsquo;)写模式，&lsquo;r&rsquo;读模式，‘r+’读写模式</h6>
+<pre tabindex="0"><code>with open(&#39;test.txt&#39;) as file01:
+	content = file01.read
+print(content)
+</code></pre><h6 id="二with语句可抽象出文件操作中的tryexcept等会自动关闭打开的文件">（二）with语句：可抽象出文件操作中的try、except等，会自动关闭打开的文件:</h6>
 <pre tabindex="0"><code>try:
 
-​	with open(&#39;data.txt&#39;, &#39;w&#39;) as f:
+​	with open(&#39;data.txt&#39;, &#39;r&#39;) as f:
 
 ​		for each_line in f:
 
@@ -1328,7 +1356,7 @@ except Exception as e:
 except OSError as reason:
 
 ​	print(reason)
-</code></pre><h6 id="二readline方法从文件中读取一整行字符串还可将整个文件置于一个字符串中读取list-f-">（二）readline（）方法：从文件中读取一整行字符串。还可将整个文件置于一个字符串中读取：list( f )</h6>
+</code></pre><h6 id="三readline方法从文件中读取一整行字符串还可将整个文件置于一个字符串中读取list-f-">（三）readline（）方法：从文件中读取一整行字符串。还可将整个文件置于一个字符串中读取：list( f )</h6>
 <pre tabindex="0"><code>写入：
 
 with open(&#39;data.txt&#39;, &#39;w&#39;) as f:
@@ -1338,6 +1366,61 @@ with open(&#39;data.txt&#39;, &#39;w&#39;) as f:
 with open(&#39;data.txt&#39;, &#39;a&#39;) as f:
 
 ​	f.write(&#34;待写入的数据&#34;) #“a”模式下才是内容上追加。
+</code></pre><h6 id="四python操作excel">（四）python操作excel</h6>
+<p>使用库：&lsquo;xlwings&rsquo;, <code>xlwings</code> 可以读取 <code>.xls</code> 和 <code>.xlsx</code> 文件,xlwings直接对接apps</p>
+<p>4.1.xlwings读取excel文件：</p>
+<pre tabindex="0"><code>app = xw.App(visible=True, add_book=False) # 程序可见，只打开不新建工作薄
+app.display_alerts = False # 警告关闭
+app.screen_updating = False # 屏幕更新关闭
+
+wb = app.books.open(xlsx_path)
+wb.save() # 保存文件
+wb.close() # 关闭文件
+app.quit() # 关闭程序
+</code></pre><p>4.2.xlwings获取工作表</p>
+<pre tabindex="0"><code>sheet = xw.sheets.active # 在活动工作簿（当前正在操作的工作簿）
+sheet = wb.sheets.active # 在特定工作簿
+</code></pre><p>4.3.xlwings创建文件</p>
+<pre tabindex="0"><code>wb = app.books.add()
+# 无论是新建还是打开都需要保存工作簿、关闭工作簿、关闭程序，即：
+wb.save(path + r&#39;\new_practice.xlsx&#39;) 
+wb.close() 
+app.quit()
+</code></pre><p>4.4.xlwings获取单元格的值</p>
+<pre tabindex="0"><code># 获取单个单元格的值
+A1 = sheet.range(&#39;A1&#39;).value
+print(A1)
+
+# 获取横向或纵向多个单元格的值，返回列表
+A1_A3 = sheet.range(&#39;A1:A3&#39;).value
+print(A1_A3)
+
+# 获取给定范围内多个单元格的值，返回嵌套列表，按行为列表
+A1_C4 = sheet.range(&#39;A1:C4&#39;).value
+print(A1_C4)
+</code></pre><p>4.5.xlwings写入数据</p>
+<pre tabindex="0"><code># 写入 1 个单元格
+sheet.range(&#39;A2&#39;).value = &#39;大明&#39;
+
+# 横向写入A1:C1，只能靠存储输入值的列表长度来决定输入到哪一个单元格结束
+sheet.range(&#39;A1&#39;).value = [1,2,3]
+# 纵向写入A1:A3
+sheet.range(&#39;A1&#39;).options(transpose=True).value = [1,2,3]
+# 写入范围内多个单元格
+sheet.range(&#39;A1&#39;).options(expand=&#39;table&#39;).value = [[1,2,3], [4,5,6]]
+</code></pre><p>4.6.xlwings调整样式</p>
+<pre tabindex="0"><code># 获取颜色
+print(sheet.range(&#39;C1&#39;).color)
+
+# 设置颜色
+sheet.range(&#39;C1&#39;).color = (255, 0, 120)
+
+# 清除颜色
+sheet.range(&#39;C1&#39;).color = None
+</code></pre><p>4.7.xlwings插入图片</p>
+<pre tabindex="0"><code>sheet.pictures.add(r&#39;C:\\xxx.jpg&#39;)
+# 也可以给定位置插入
+sheet.pictures.add(r&#39;C:\\xxx.jpg&#39;, left=sheet.range(&#39;A2&#39;).left, top=sheet.range(&#39;A2&#39;).top, width=100, height=100)
 </code></pre>
           </div>
           <div class="row items-start justify-between">
@@ -1605,192 +1688,29 @@ with open(&#39;data.txt&#39;, &#39;a&#39;) as f:
         <picture>
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_545x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_545x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_600x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_600x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_700x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_700x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_1110x0_resize_q80_h2_lanczos_3.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_lanczos_3.png"
+              src="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="start-hugo"
-            width="1127"
-            height="491" />
-        </picture>
-      
-      
-    
-    
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/blog/start-hugo/">
-      start-hugo
-    </a>
-  </h4>
-  
-  
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="/authors/xxcdu/">
-          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        
-          <a
-            href="/categories/application/"
-            class="ms-1"
-            >Application
-              ,
-            
-          </a>
-        
-          <a
-            href="/categories/data/"
-            class="ms-1"
-            >Data
-          </a>
-        
-      </li>
-    </ul>
-  
-  <p class="mb-6">条件：配置好git，下载hugo，将hugo所在目录放入环境变量
-1、创建网站： hugo new site /path/to/site;
-2、克隆主题： git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c;（具体方式看主题中的介绍） 主题网址：https://themes.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/start-hugo/">
-    Read More
-  </a>
-</div>
-
-              </div>
-            
-              <div class="lg:col-4 md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-  
-    
-      
-    
-
-
-    
-    
-
-
-    
-    
-      
-      
-    
-    
-    
-
-
-    
-    
-      
-      
-        
-
-        
-        
-        
-        
-        
-        
-        
-
-
-        
-        
-
-
-        <picture>
-          <source
-            
-              srcset="/images/git_img_hu06a8df83191db1ce2b92fca12f7ce4f4_35939_545x0_resize_q80_h2_lanczos_3.webp"
-            
-            media="(max-width: 575px)" />
-          <source
-            
-              srcset="/images/git_img_hu06a8df83191db1ce2b92fca12f7ce4f4_35939_600x0_resize_q80_h2_lanczos_3.webp"
-            
-            media="(max-width: 767px)" />
-          <source
-            
-              srcset="/images/git_img_hu06a8df83191db1ce2b92fca12f7ce4f4_35939_700x0_resize_q80_h2_lanczos_3.webp"
-            
-            media="(max-width: 991px)" />
-          <source
-            
-              srcset="/images/git_img_hu06a8df83191db1ce2b92fca12f7ce4f4_35939_1110x0_resize_q80_h2_lanczos_3.webp"
-             />
-          <img
-            
-              loading="lazy" decoding="async"
-              src="/images/git_img_hu06a8df83191db1ce2b92fca12f7ce4f4_35939_1110x0_resize_lanczos_3.png"
-            class=" mb-6 w-full rounded img"
-            alt="git pull 覆盖本地仓库后回滚"
+            alt="html基础"
             width="1096"
             height="480" />
         </picture>
@@ -1806,8 +1726,8 @@ with open(&#39;data.txt&#39;, &#39;a&#39;) as f:
 
   
   <h4 class="mb-3">
-    <a href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
-      git pull 覆盖本地仓库后回滚
+    <a href="/blog/html%E5%9F%BA%E7%A1%80/">
+      html基础
     </a>
   </h4>
   
@@ -1838,8 +1758,8 @@ with open(&#39;data.txt&#39;, &#39;a&#39;) as f:
       </li>
     </ul>
   
-  <p class="mb-6">1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &ndash;hard 78ac8a0</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/">
+  <p class="mb-6">1、标签 ：&lt;标签&gt; 2、元素：&lt;p&gt;.......&lt;/p&gt; 3、&lt;!DOCTYPE&gt; 声明：（1）HTML5 ：&lt;!DOCTYPE html&gt;(不用区分大小写)（2）HTML 4.01：&lt;!</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/html%E5%9F%BA%E7%A1%80/">
     Read More
   </a>
 </div>
@@ -2003,6 +1923,169 @@ with open(&#39;data.txt&#39;, &#39;a&#39;) as f:
 python -m venv xxcdu 2、激活虚拟环境 windows：
 xxcdu/Scripts/activate linux：</p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/django%E5%9F%BA%E7%A1%80/">
+    Read More
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_545x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_600x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_700x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_q80_h2_lanczos_3.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_lanczos_3.png"
+            class=" mb-6 w-full rounded img"
+            alt="start-hugo"
+            width="1127"
+            height="491" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/start-hugo/">
+      start-hugo
+    </a>
+  </h4>
+  
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/authors/xxcdu/">
+          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/application/"
+            class="ms-1"
+            >Application
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/data/"
+            class="ms-1"
+            >Data
+          </a>
+        
+      </li>
+    </ul>
+  
+  <p class="mb-6">一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量
+1、创建网站： hugo new site /path/to/site;
+2、克隆主题： git clone https://github.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/start-hugo/">
     Read More
   </a>
 </div>

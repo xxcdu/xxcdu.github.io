@@ -6,8 +6,15 @@
     <description>Recent content in Data on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jan 2025 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Mar 2025 05:00:00 +0000</lastBuildDate>
     <atom:link href="https://xxcdu.github.io/categories/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>取证——存储与文件系统基础</title>
+      <link>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sun, 30 Mar 2025 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <description>一、磁盘结构&#xA;1、盘面：每个盘片有上下两个盘面，从上到下从0开始编号。&#xA;2、磁道：磁针画一圈叫一个磁道。&#xA;3、柱面：重叠的磁道形成一个圆柱的面。&#xA;4、扇区：每个磁道分为若干个弧度，一个磁道一般被分为63个扇区。大小一般为512B。&#xA;5、容量 = 盘面数*柱面数*扇区数*512B&#xA;6、簇：最小文件管理单位，由多个扇区构成，有2、4、8、16、32或64几种情况。如果为16个扇区，即8K=16*512，&#xA;二、硬盘的文件系统</description>
+    </item>
     <item>
       <title>html基础</title>
       <link>https://xxcdu.github.io/blog/html%E5%9F%BA%E7%A1%80/</link>
@@ -37,13 +44,6 @@
       <description>1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &amp;ndash;hard 78ac8a0</description>
     </item>
     <item>
-      <title>Hugo-github常见问题</title>
-      <link>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&amp;hellip;..&#xA;2、若在github远端修改仓库代码，则在将public push时可能会出现：&#xA;error: failed to push some refs to &amp;#39;https://github.</description>
-    </item>
-    <item>
       <title>python基础</title>
       <link>https://xxcdu.github.io/blog/python%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
@@ -55,14 +55,7 @@
       <link>https://xxcdu.github.io/blog/start-hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
       <guid>https://xxcdu.github.io/blog/start-hugo/</guid>
-      <description>条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站： hugo new site /path/to/site;&#xA;2、克隆主题： git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c;（具体方式看主题中的介绍） 主题网址：https://themes.</description>
-    </item>
-    <item>
-      <title>更新hugo</title>
-      <link>https://xxcdu.github.io/blog/%E6%9B%B4%E6%96%B0hugo/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/%E6%9B%B4%E6%96%B0hugo/</guid>
-      <description>1、&#xA;在根目录下builddrafts生成public文件夹，例如：&#xA;hugo --theme=hugoplate --baseURL=&amp;#34;https://xxcdu.github.io/&amp;#34; --buildDrafts 2、进入public文件夹&#xA;3、&#xA;git add .</description>
+      <description>一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站： hugo new site /path/to/site;&#xA;2、克隆主题： git clone https://github.</description>
     </item>
   </channel>
 </rss>

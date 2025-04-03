@@ -1077,7 +1077,7 @@
   <ol>
     <li>
       <ol>
-        <li>
+        <li><a href="#一start-hugo">一、start hugo</a>
           <ol>
             <li><a href="#1创建网站">1、创建网站：</a></li>
             <li><a href="#2克隆主题">2、克隆主题：</a></li>
@@ -1096,13 +1096,16 @@
             </li>
           </ol>
         </li>
+        <li><a href="#二更新hugo">二、更新hugo</a></li>
+        <li><a href="#三hugo常见问题">三、hugo常见问题</a></li>
       </ol>
     </li>
   </ol>
 </nav>
 </details>
 
-            <p>条件：配置好git，下载hugo，将hugo所在目录放入环境变量</p>
+            <h3 id="一start-hugo">一、start hugo</h3>
+<p>条件：配置好git，下载hugo，将hugo所在目录放入环境变量</p>
 <h4 id="1创建网站">1、创建网站：</h4>
 <p><code>hugo new site /path/to/site</code>;</p>
 <h4 id="2克隆主题">2、克隆主题：</h4>
@@ -1143,7 +1146,29 @@ git commit -m &#34;     &#34;
 	git config --global http.sslverify false #全局用户
 	git config http.sslverify false #当前仓库
 </code></pre><p>​</p>
-<p>若嵌套git子模块时遇到：npm config set strict-ssl false</p>
+<h3 id="二更新hugo">二、更新hugo</h3>
+<p>1、在根目录下builddrafts生成public文件夹，例如：</p>
+<pre tabindex="0"><code>hugo --theme=hugoplate --baseURL=&#34;https://xxcdu.github.io/&#34; --buildDrafts
+</code></pre><p>2、进入public文件夹</p>
+<p>3、添加到git</p>
+<pre tabindex="0"><code>git add .
+</code></pre><p>4、提交git</p>
+<pre tabindex="0"><code>git commit -m &#34;  &#34;
+</code></pre><p>5、push到远程仓库</p>
+<pre tabindex="0"><code>git push -u origin master
+</code></pre><h3 id="三hugo常见问题">三、hugo常见问题</h3>
+<p>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..</p>
+<p>2、若在github远端修改仓库代码，则在将public push时可能会出现：</p>
+<pre tabindex="0"><code>error: failed to push some refs to &#39;https://github.com/xxcdu/xxcdu.github.io/&#39;
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use &#39;git pull&#39; before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+</code></pre><p>显示远端被修改。这时需要先拉取远程更改：</p>
+<pre tabindex="0"><code>git pull origin master
+</code></pre><p>在本地分支上更改冲突文件，再git add 提交推送。</p>
+<p>3、远程部署后，想在本地启动服务并修改网站文件，使用“hugo server -t m10c –buildDrafts”可能出现本地服务启动后，主页中没有文章链接的情况，这时查看public根目录文件夹的index.html时，发现根本没有与链接文章url有关的的部分。更新public后，使用“hugo server -D”启动服务后主页出现了文章链接，但点开后跳转到了远程服务器的地址如https://xxcdu.github.io/post/start-hugo/而不是本地文章地址http://localhost:1313/post/hugo-github%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/，这可能是由于url冲突，需配置好网站根目录下的hugo.toml文件，将baseURL设置为远程部署的地址url。修改后发现已可以在访问本地站点。且注意使用时不要通过
+“hugo server -t m10c –buildDrafts”启动（原因不明），而是通过“hugo server -D“方式启动服务。</p>
 
           </div>
           <div class="row items-start justify-between">
@@ -1411,31 +1436,31 @@ git commit -m &#34;     &#34;
         <picture>
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_545x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_545x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_600x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_600x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_700x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_700x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_1110x0_resize_q80_h2_lanczos_3.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_lanczos_3.png"
+              src="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="更新hugo"
-            width="1127"
-            height="491" />
+            alt="html基础"
+            width="1096"
+            height="480" />
         </picture>
       
       
@@ -1449,8 +1474,8 @@ git commit -m &#34;     &#34;
 
   
   <h4 class="mb-3">
-    <a href="/blog/%E6%9B%B4%E6%96%B0hugo/">
-      更新hugo
+    <a href="/blog/html%E5%9F%BA%E7%A1%80/">
+      html基础
     </a>
   </h4>
   
@@ -1481,12 +1506,8 @@ git commit -m &#34;     &#34;
       </li>
     </ul>
   
-  <p class="mb-6">1、
-在根目录下builddrafts生成public文件夹，例如：
-hugo --theme=hugoplate --baseURL=&#34;https://xxcdu.github.io/&#34; --buildDrafts 2、进入public文件夹
-3、
-git add .</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9B%B4%E6%96%B0hugo/">
+  <p class="mb-6">1、标签 ：&lt;标签&gt; 2、元素：&lt;p&gt;.......&lt;/p&gt; 3、&lt;!DOCTYPE&gt; 声明：（1）HTML5 ：&lt;!DOCTYPE html&gt;(不用区分大小写)（2）HTML 4.01：&lt;!</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/html%E5%9F%BA%E7%A1%80/">
     Read More
   </a>
 </div>
@@ -1576,29 +1597,29 @@ git add .</p>
         <picture>
           <source
             
-              srcset="/images/github_img_huf44a9dc34902588516a2be593c3f97df_28592_545x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_545x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/github_img_huf44a9dc34902588516a2be593c3f97df_28592_600x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_600x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/github_img_huf44a9dc34902588516a2be593c3f97df_28592_700x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_700x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/github_img_huf44a9dc34902588516a2be593c3f97df_28592_1110x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_1110x0_resize_q80_h2_lanczos_3.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/github_img_huf44a9dc34902588516a2be593c3f97df_28592_1110x0_resize_lanczos_3.png"
+              src="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="Hugo-github常见问题"
+            alt="python基础"
             width="1096"
             height="480" />
         </picture>
@@ -1614,8 +1635,8 @@ git add .</p>
 
   
   <h4 class="mb-3">
-    <a href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
-      Hugo-github常见问题
+    <a href="/blog/python%E5%9F%BA%E7%A1%80/">
+      python基础
     </a>
   </h4>
   
@@ -1646,10 +1667,8 @@ git add .</p>
       </li>
     </ul>
   
-  <p class="mb-6">1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..
-2、若在github远端修改仓库代码，则在将public push时可能会出现：
-error: failed to push some refs to &#39;https://github.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/hugo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+  <p class="mb-6">1、格式化字符串：f”······“ first_name = Bili​	last_name = Halidon​	full_name = f&#34;{first_name}{last_name}&#34;​	print(f&#34;Hello, {full_name.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/python%E5%9F%BA%E7%A1%80/">
     Read More
   </a>
 </div>
