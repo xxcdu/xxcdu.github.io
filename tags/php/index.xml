@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Hugoplate</title>
+    <link>https://xxcdu.github.io/tags/php/</link>
+    <description>Recent content in Php on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jan 2025 05:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xxcdu.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php基础</title>
+      <link>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</guid>
+      <description>在线php手册：https://www.php.net/manualwww.php.net/manual&#xA;[TOC]&#xA;1、php标签 &amp;lt;?php&#xD;phpinfo()； #列举安装在特定服务器上的PHP的具体细节&#xD;?&amp;gt; php每一行后都要有分号“;”&#xA;2、注释 ​&#x9;单行注释：//或#</description>
+    </item>
+    <item>
+      <title>php基础</title>
+      <link>https://xxcdu.github.io/english/blog/php%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/english/blog/php%E5%9F%BA%E7%A1%80/</guid>
+      <description>在线php手册：https://www.php.net/manualwww.php.net/manual&#xA;[TOC]&#xA;1、php标签 &amp;lt;?php&#xD;phpinfo()； #列举安装在特定服务器上的PHP的具体细节&#xD;?&amp;gt; php每一行后都要有分号“;”&#xA;2、注释 ​&#x9;单行注释：//或#</description>
+    </item>
+  </channel>
+</rss>

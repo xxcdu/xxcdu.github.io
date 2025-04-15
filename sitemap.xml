@@ -1,66 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://xxcdu.github.io/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/categories/application/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/categories/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/categories/data/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/tags/nextjs/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/tags/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/tags/tailwind/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/html%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2025-01-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2025-01-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/python%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/blog/start-hugo/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/authors/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/about/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/contact/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/elements/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/pages/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/privacy-policy/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/sections/</loc>
-  </url><url>
-    <loc>https://xxcdu.github.io/authors/xxcdu/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://xxcdu.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Hugoplate</title>
+    <link>https://xxcdu.github.io/tags/python/</link>
+    <description>Recent content in Python on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xxcdu.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django基础</title>
+      <link>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</guid>
+      <description>一、虚拟环境 1、建立虚拟环境&#xA;python -m venv xxcdu 2、激活虚拟环境 windows：&#xA;xxcdu/Scripts/activate linux：</description>
+    </item>
+    <item>
+      <title>Django基础</title>
+      <link>https://xxcdu.github.io/english/blog/django%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/english/blog/django%E5%9F%BA%E7%A1%80/</guid>
+      <description>一、虚拟环境 1、建立虚拟环境&#xA;python -m venv xxcdu 2、激活虚拟环境 windows：&#xA;xxcdu/Scripts/activate linux：</description>
+    </item>
+    <item>
+      <title>python基础</title>
+      <link>https://xxcdu.github.io/blog/python%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/blog/python%E5%9F%BA%E7%A1%80/</guid>
+      <description>1、格式化字符串：f”······“ first_name = Bili&#xD;​&#x9;last_name = Halidon&#xD;​&#x9;full_name = f&amp;#34;{first_name}{last_name}&amp;#34;&#xD;​&#x9;print(f&amp;#34;Hello, {full_name.</description>
+    </item>
+    <item>
+      <title>python基础</title>
+      <link>https://xxcdu.github.io/english/blog/python%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>https://xxcdu.github.io/english/blog/python%E5%9F%BA%E7%A1%80/</guid>
+      <description>1、格式化字符串：f”······“ first_name = Bili&#xD;​&#x9;last_name = Halidon&#xD;​&#x9;full_name = f&amp;#34;{first_name}{last_name}&amp;#34;&#xD;​&#x9;print(f&amp;#34;Hello, {full_name.</description>
+    </item>
+  </channel>
+</rss>
