@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>博客 on Hugoplate</title>
-    <link>https://xxcdu.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <link>//localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 博客 on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xxcdu.github.io/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>start-hugo</title>
-      <link>https://xxcdu.github.io/blog/start-hugo/</link>
+      <link>//localhost:1313/blog/start-hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/start-hugo/</guid>
+      <guid>//localhost:1313/blog/start-hugo/</guid>
       <description>一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站： hugo new site /path/to/site;&#xA;2、克隆主题： git clone https://github.</description>
     </item>
     <item>
       <title>start-hugo</title>
-      <link>https://xxcdu.github.io/english/blog/start-hugo/</link>
+      <link>//localhost:1313/english/blog/start-hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/start-hugo/</guid>
+      <guid>//localhost:1313/english/blog/start-hugo/</guid>
       <description>一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站： hugo new site /path/to/site;&#xA;2、克隆主题： git clone https://github.</description>
     </item>
   </channel>

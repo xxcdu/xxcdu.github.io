@@ -1,0 +1,1777 @@
+<!doctype html>
+<html
+  itemscope
+  class=""
+  lang="en-us"
+  itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8" />
+
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+
+<meta name="theme-name" content="hugoplate" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_96x0_resize_lanczos_3.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_96x0_resize_lanczos_3.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_48x0_resize_lanczos_3.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_96x0_resize_lanczos_3.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_144x0_resize_lanczos_3.png">
+
+
+
+
+
+
+
+
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta
+  name="msapplication-TileColor"
+  content="#ddd" />
+<meta
+  name="theme-color"
+  content="#ffffff" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <base href="//localhost:1313/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/" />
+
+
+
+
+
+
+
+  
+  
+
+
+<title>sha256、bcrypt等常见编码特征</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta
+    name="keywords"
+    content="Boilerplate, Hugo" />
+
+
+
+
+<meta
+  name="description"
+  content="this is meta description" />
+
+
+
+  <meta name="author" content="zeon.studio" />
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+      
+        <meta property="og:image" content="//localhost:1313/images/django_img.png" />
+        <meta name="twitter:image" content="//localhost:1313/images/django_img.png" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image" />
+      
+      
+      <meta property="og:image:width" content="1096" />
+      <meta property="og:image:height" content="480" />
+    
+
+
+    
+    <meta
+      property="og:image:type"
+      content="image/.png" />
+  
+
+
+  
+
+
+
+
+
+<meta property="og:title" content="sha256、bcrypt等常见编码特征" />
+<meta property="og:description" content="this is meta description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="//localhost:1313/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/" />
+
+
+<meta name="twitter:title" content="sha256、bcrypt等常见编码特征" />
+<meta name="twitter:description" content="this is meta description" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  let indexURL = "//localhost:1313/searchindex.json";
+  let includeSectionsInSearch = ["blog"];
+  let search_no_results = "No results for";
+  let search_initial_message = "Type something to search..";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//platform.linkedin.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com" />
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script>
+  (function () {
+    const googleFont = document.createElement("link");
+    googleFont.href = "https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Signika:wght@500;700&display=swap";
+    googleFont.type = "text/css";
+    googleFont.rel = "stylesheet";
+    document.head.appendChild(googleFont);
+  })();
+</script>
+
+
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<link
+  href="/css/style.css"
+  integrity=""
+  rel="stylesheet" />
+
+
+<link
+  defer
+  async
+  rel="stylesheet"
+  href="/css/style-lazy.css"
+  integrity=""
+  media="print"
+  onload="this.media='all'; this.onload=null;" />
+
+
+  </head>
+
+  <body>
+    
+    
+      
+
+
+
+
+
+      
+      <div
+  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
+  <span class="block sm:hidden">all</span>
+  <span class="hidden sm:block md:hidden">sm</span>
+  <span class="hidden md:block lg:hidden">md</span>
+  <span class="hidden lg:block xl:hidden">lg</span>
+  <span class="hidden xl:block 2xl:hidden">xl</span>
+  <span class="hidden 2xl:block">2xl</span>
+</div>
+
+    
+
+
+    
+    
+
+
+  <div id="announcement" class="announcement announcement-hide">
+    
+    <button id="announcement-button" class="announcement-button">
+      &times;
+    </button>
+  </div>
+
+  
+  <style>
+    .announcement {
+      position: relative;
+      z-index: 999;
+      padding: 1rem;
+      padding-right: 2.8rem;
+      background-color: #fff;
+      box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+      font-size: 1.1rem;
+    }
+    .announcement-button {
+      cursor: pointer;
+      padding: 0 0.5rem;
+      border: 0;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      border: 1px solid;
+      border-radius: 50%;
+      height: 1.1em;
+      width: 1.1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .announcement-hide {
+      display: none;
+    }
+    .dark .announcement {
+      background-color: #222;
+    }
+  </style>
+
+
+
+
+    
+    <header
+  class="header sticky top-0 z-30">
+  <nav class="navbar container">
+    
+    <div class="order-0">
+      
+      <a class="navbar-brand block" href="/">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-light"
+      width="160"
+      height="32"
+      src="/images/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_lanczos_3.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_lanczos_3.png';" />
+  
+  
+
+
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
+      
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/about/"
+              >About</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/blog/"
+              >Blog</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item nav-dropdown group relative">
+            <span
+              class="nav-link 
+                
+                
+                
+              
+                
+                
+                
+              
+                
+                
+                
+              
+                
+                
+                
+               inline-flex items-center">
+              Pages
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </span>
+            <ul
+              class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/404.html">
+                    404 Page
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/authors/">
+                    Authors
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/categories/">
+                    Categories
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/contact/">
+                    Contact
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      
+      
+        <li class="mt-4 inline-block lg:hidden">
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="/contact">
+            get a quote
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      
+        
+          <button
+            aria-label="search"
+            
+            class="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
+            
+            data-target="search-modal">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        
+      
+
+      
+
+
+
+
+
+
+
+
+
+      
+
+
+  <div class="theme-switcher mr-5">
+    <input id="theme-switcher" data-theme-switcher type="checkbox" />
+    <label for="theme-switcher">
+      <span class="sr-only">theme switcher</span>
+      <span>
+        
+        <svg
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-100 dark:opacity-0"
+          viewBox="0 0 56 56"
+          fill="#fff"
+          height="16"
+          width="16">
+          <path
+            d="M30 4.6c0-1-.9-2-2-2a2 2 0 0 0-2 2v5c0 1 .9 2 2 2s2-1 2-2Zm9.6 9a2 2 0 0 0 0 2.8c.8.8 2 .8 2.9 0L46 13a2 2 0 0 0 0-2.9 2 2 0 0 0-3 0Zm-26 2.8c.7.8 2 .8 2.8 0 .8-.7.8-2 0-2.9L13 10c-.7-.7-2-.8-2.9 0-.7.8-.7 2.1 0 3ZM28 16a12 12 0 0 0-12 12 12 12 0 0 0 12 12 12 12 0 0 0 12-12 12 12 0 0 0-12-12Zm23.3 14c1.1 0 2-.9 2-2s-.9-2-2-2h-4.9a2 2 0 0 0-2 2c0 1.1 1 2 2 2ZM4.7 26a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4.9c1 0 2-.9 2-2s-1-2-2-2Zm37.8 13.6a2 2 0 0 0-3 0 2 2 0 0 0 0 2.9l3.6 3.5a2 2 0 0 0 2.9 0c.8-.8.8-2.1 0-3ZM10 43.1a2 2 0 0 0 0 2.9c.8.7 2.1.8 3 0l3.4-3.5c.8-.8.8-2.1 0-2.9-.8-.8-2-.8-2.9 0Zm20 3.4c0-1.1-.9-2-2-2a2 2 0 0 0-2 2v4.9c0 1 .9 2 2 2s2-1 2-2Z" />
+        </svg>
+        
+        <svg
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-0 dark:opacity-100"
+          viewBox="0 0 24 24"
+          fill="none"
+          height="16"
+          width="16">
+          <path
+            fill="#000"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.2 2.2c1-.4 2 .6 1.6 1.5-1 3-.4 6.4 1.8 8.7a8.4 8.4 0 0 0 8.7 1.8c1-.3 2 .5 1.5 1.5v.1a10.3 10.3 0 0 1-9.4 6.2A10.3 10.3 0 0 1 3.2 6.7c1-2 2.9-3.5 4.9-4.4Z" />
+        </svg>
+      </span>
+    </label>
+  </div>
+
+  
+  <script>
+    var darkMode = false;
+
+    
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches){darkMode = true}
+    
+
+    if (localStorage.getItem("theme") === "dark"){darkMode = true}
+    else if (localStorage.getItem("theme") === "light"){darkMode = false}
+    if (darkMode){document.documentElement.classList.toggle("dark")}
+    var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
+
+    document.addEventListener("DOMContentLoaded", () => {
+      [].forEach.call(themeSwitch, function (ts) {
+        ts.checked = darkMode ? true : false;
+        ts.addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+          localStorage.setItem(
+            "theme",
+            document.documentElement.classList.contains("dark") ? "dark" : "light"
+          );
+        });
+      });
+    });
+  </script>
+
+
+
+
+      
+      
+        <a
+          href="/contact"
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          get a quote
+        </a>
+      
+    </div>
+  </nav>
+</header>
+
+    
+
+
+
+
+  
+    <div
+      class="search-modal "
+      aria-hidden="true"
+      style="--color-primary: #121212">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
+          <label for="search-modal-input" style="margin-top:-1px">
+            <span class="sr-only">search icon</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              height="18"
+              width="18"
+              class="search-icon"
+              data-type="search">
+              <path
+                fill="currentColor"
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              height="18"
+              width="18"
+              class="search-reset"
+              data-type="reset">
+              <path
+                fill="currentColor"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+            </svg>
+          </label>
+          <input
+            id="search-modal-input"
+            type="text"
+            data-search-input
+            autocomplete="off"
+            aria-label="Search"
+            placeholder="Search Post..." />
+        </div>
+        <div class="search-wrapper-body">
+          <div class="search-result" data-search-result></div>
+          <span class="search-result-empty">
+            Type something to search..
+          </span>
+        </div>
+        <div class="search-wrapper-footer">
+          <span>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+              </svg>
+            </kbd>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                style="margin-top:1px;"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+              </svg>
+            </kbd>
+            to navigate
+          </span>
+          <span>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                fill="currentColor"
+                style="display:inline-block;"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+              </svg>
+            </kbd>
+            to select
+          </span>
+          <span class="search-result-info"></span>
+          <span data-target="close-search-modal">
+            <kbd>ESC</kbd> to close
+          </span>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+    <main>
+      
+  <section>
+  <div class="container text-center">
+    <div
+      class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8 py-14">
+      <h1>常见编码特征</h1>
+      
+
+
+
+
+<ul class="mt-6 inline-flex space-x-1 capitalize">
+  <li>
+    <a class="text-primary dark:text-darkmode-primary" href="//localhost:1313/">
+      Home
+    </a>
+    <span class="inlin-block mr-1">/</span>
+  </li>
+  
+    
+  
+    
+      <li>
+        <a
+          class="text-primary dark:text-darkmode-primary"
+          href="/english/">
+          
+        </a>
+        <span class="inlin-block mr-1">/</span>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          class="text-primary dark:text-darkmode-primary"
+          href="/english/blog/">
+          Blog Posts
+        </a>
+        <span class="inlin-block mr-1">/</span>
+      </li>
+    
+  
+  <li>
+    <span class="text-primary dark:text-darkmode-primary">
+      常见编码特征
+    </span>
+  </li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content">
+            <p>参考文章：<a href="https://cloud.tencent.com/developer/article/1748394"
+
+
+
+
+ target="_blank"
+ 
+
+
+>30余种加密编码类型的密文特征分析（建议收藏）-腾讯云开发者社区-腾讯云</a></p>
+<p>[TOC]</p>
+<h3 id="1md5sha1hmac算法ntlm等相似加密类型">1、MD5、sha1、HMAC算法、NTLM等相似加密类型：</h3>
+<p>（1）MD5 （例：21232F297A57A5A743894A0E4A801FC3）32位</p>
+<p>由数字“0-9”和字母“a-f”所组成的字符串、。如果出现这个范围以外的字符说明这可能是个错误的md5值，没必要再拿去解密。</p>
+<p>（2）sha1（例：d033e22ae348aeb5660fc2140aec35850c4da997）40位</p>
+<p>（3）相似加密类型长度：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">#</th>
+<th style="text-align:left">算法</th>
+<th style="text-align:left">长度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">md5</td>
+<td style="text-align:left">32/16</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">sha1</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">sha256</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">sha512</td>
+<td style="text-align:left">128</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">adler32</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">crc32</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">crc32b</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">fnv132</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">fnv164</td>
+<td style="text-align:left">16</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">fnv1a32</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">fnv1a64</td>
+<td style="text-align:left">16</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">gost</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">gost-crypto</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">haval128,3</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">haval128,4</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">haval128,5</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">haval160,3</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">haval160,4</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">haval160,5</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">haval192,3</td>
+<td style="text-align:left">48</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left">haval192,4</td>
+<td style="text-align:left">48</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left">haval192,5</td>
+<td style="text-align:left">48</td>
+</tr>
+<tr>
+<td style="text-align:left">23</td>
+<td style="text-align:left">haval224,3</td>
+<td style="text-align:left">56</td>
+</tr>
+<tr>
+<td style="text-align:left">24</td>
+<td style="text-align:left">haval224,4</td>
+<td style="text-align:left">56</td>
+</tr>
+<tr>
+<td style="text-align:left">25</td>
+<td style="text-align:left">haval224,5</td>
+<td style="text-align:left">56</td>
+</tr>
+<tr>
+<td style="text-align:left">26</td>
+<td style="text-align:left">haval256,3</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">27</td>
+<td style="text-align:left">haval256,4</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">28</td>
+<td style="text-align:left">haval256,5</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">29</td>
+<td style="text-align:left">joaat</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">30</td>
+<td style="text-align:left">md2</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">31</td>
+<td style="text-align:left">md4</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">32</td>
+<td style="text-align:left">ripemd128</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">33</td>
+<td style="text-align:left">ripemd160</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">34</td>
+<td style="text-align:left">ripemd256</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">35</td>
+<td style="text-align:left">ripemd320</td>
+<td style="text-align:left">80</td>
+</tr>
+<tr>
+<td style="text-align:left">36</td>
+<td style="text-align:left">sha224</td>
+<td style="text-align:left">56</td>
+</tr>
+<tr>
+<td style="text-align:left">37</td>
+<td style="text-align:left">sha3-224</td>
+<td style="text-align:left">56</td>
+</tr>
+<tr>
+<td style="text-align:left">38</td>
+<td style="text-align:left">sha3-256</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">39</td>
+<td style="text-align:left">sha3-384</td>
+<td style="text-align:left">96</td>
+</tr>
+<tr>
+<td style="text-align:left">40</td>
+<td style="text-align:left">sha3-512</td>
+<td style="text-align:left">128</td>
+</tr>
+<tr>
+<td style="text-align:left">41</td>
+<td style="text-align:left">sha384</td>
+<td style="text-align:left">96</td>
+</tr>
+<tr>
+<td style="text-align:left">42</td>
+<td style="text-align:left">sha512/224</td>
+<td style="text-align:left">56</td>
+</tr>
+<tr>
+<td style="text-align:left">43</td>
+<td style="text-align:left">sha512/256</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">44</td>
+<td style="text-align:left">snefru</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">45</td>
+<td style="text-align:left">snefru256</td>
+<td style="text-align:left">64</td>
+</tr>
+<tr>
+<td style="text-align:left">46</td>
+<td style="text-align:left">tiger128,3</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">47</td>
+<td style="text-align:left">tiger128,4</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">48</td>
+<td style="text-align:left">tiger160,3</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">49</td>
+<td style="text-align:left">tiger160,4</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">50</td>
+<td style="text-align:left">tiger192,3</td>
+<td style="text-align:left">48</td>
+</tr>
+<tr>
+<td style="text-align:left">51</td>
+<td style="text-align:left">tiger192,4</td>
+<td style="text-align:left">48</td>
+</tr>
+<tr>
+<td style="text-align:left">52</td>
+<td style="text-align:left">whirlpool</td>
+<td style="text-align:left">128</td>
+</tr>
+<tr>
+<td style="text-align:left">53</td>
+<td style="text-align:left">mysql</td>
+<td style="text-align:left">老MYSQL数据库用的，16位，且第1位和第7位必须为0-8</td>
+</tr>
+<tr>
+<td style="text-align:left">54</td>
+<td style="text-align:left">mysql5</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">55</td>
+<td style="text-align:left">NTLM</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">56</td>
+<td style="text-align:left">Domain Cached Credentials</td>
+<td style="text-align:left">32</td>
+</tr>
+</tbody>
+</table>
+<h4 id="常用解密网站"><strong>常用解密网站：</strong></h4>
+<ul>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.cmd5.com%2F&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.cmd5.com</a>（带批量解密工具）</li>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.somd5.com%2F&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.somd5.com</a></li>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fcmd5.la%2Fuser%2Findex.php&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>cmd5.la</a></li>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fpmd5.com%2F&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>pmd5.com</a></li>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=http%3A%2F%2Fwww.ttmd5.com%2F&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.ttmd5.com</a>（带批量解密工具）</li>
+</ul>
+<p>​</p>
+<h3 id="2base64base58base32base16base85base100等相似加密类型">2、Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型</h3>
+<p>（1）Base64（例：YWRtaW4tcm9vdA==）
+一般情况下密文尾部都会有两个等号，明文很少时没有。Base64编码要求把3个8位字节（38=24）转化为4个6位的字节（46=24），之后在6位的前面补两个0，形成8位一个字节的形式。 如果剩下的字符不足3个字节，则用0填充，输出字符使用‘=’，因此编码后输出的文本末尾可能会出现1或2个‘=’。</p>
+<p>注：URL编码器会把标准Base64中的“/”和“+”字符变为形如“%XX”的形式，而这些“%”号在存入数据库时还需要再进行转换，因为ANSI SQL中已将“%”号用作通配符。</p>
+<p>（2）Base58（例：`6tmHCZvhgfNjQu）用于比特币（Bitcoin）中使用的一种独特的编码方式，主要用于产生Bitcoin的钱包地址。</p>
+<p>最后没有等号。</p>
+<p>（3）Base32（例：GEZDGNBVGY3TQOJQGE======）特点是明文超过十个后面就会有很多等号。</p>
+<p>（4）Base16（例：61646D696E）特点是没有等号并且数字要多于字母。</p>
+<p>（5）Base85（例:X4hDWe0rkE(G[OdP4CT]N#）特点是奇怪的字符比较多，但是很难出现等号。</p>
+<p>（6）Base100（例：<code>👘👛👤👠👥</code>）特点是一堆Emoji表情。</p>
+<h4 id="常用解密网站-1"><strong>常用解密网站：</strong></h4>
+<p>Base64：</p>
+<ul>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Ftool.oschina.net%2Fencrypt%3Ftype%3D3&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>tool.oschina.net</a></li>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.sojson.com%2Fbase64.html&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.sojson.com</a></li>
+<li><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fbase64.us%2F&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>base64.us</a></li>
+</ul>
+<p>Base58：<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=http%3A%2F%2Fwww.metools.info%2Fcode%2Fc74.html&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.metools.info</a></p>
+<p>Base32、16：<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.qqxiuzi.cn%2Fbianma%2Fbase.php&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.qqxiuzi.cn</a></p>
+<p>Base100：<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=http%3A%2F%2Fwww.atoolbox.net%2FTool.php%3FId%3D936&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>www.atoolbox.net</a></p>
+<p>​</p>
+<h3 id="3非对称加密算法aesdesrc4rabbittriple-des3des等">3、非对称加密算法：AES、DES、RC4、Rabbit、Triple DES（3DES）等。</h3>
+<p>引入了密钥，密文特征与Base64类似</p>
+<p>​</p>
+<h3 id="4urlhex编码">4、URL、Hex编码</h3>
+<p>这两种加密的密文是一样的，不同的是当你用url编码网站时是不会把http进行编码的，而Hex编码则全部转化了</p>
+<p>encodeURIComponent() 函数 与 encodeURI() 函数的区别 请注意 encodeURIComponent() 函数 与 encodeURI() 函数的区别之处，前者假定它的参数是 URI 的一部分（比如协议、主机名、路径或查询字符串）。因此 encodeURIComponent() 函数将转义用于分隔 URI 各个部分的标点符号。</p>
+<h4 id="常用解密网站-2"><strong>常用解密网站：</strong></h4>
+<p>Hex编码：<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.107000.com%2FT-Hex&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>https://www.107000.com/T-Hex</a></p>
+<p>URL 编码：<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.sojson.com%2Fencodeurl.html&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>https://www.sojson.com/encodeurl.html</a></p>
+<p>​</p>
+<h3 id="5escape编码加密unescape解码解密u编码u解码">5、Escape编码/加密、Unescape解码/解密、%u编码、%u解码</h3>
+<p>特征：以%u开头,净是%u。 Escape编码/加密,就是字符对应UTF-16 16进制表示方式前面加%u，Unescape解码/解密，就是去掉&quot;%u&quot;后，将16进制字符还原后，由utf-16转码到自己目标字符。如：字符“中”，UTF-16BE是：“6d93”，因此Escape是“%u6d93”</p>
+<h4 id="常用解密网站-3"><strong>常用解密网站：</strong></h4>
+<p><a href="https://cloud.tencent.com/developer/tools/blog-entry?target=http%3A%2F%2Fweb.chacuo.net%2Fcharsetescape%2F&amp;objectId=1748394&amp;objectType=1&amp;isNewArticle=undefined"
+
+
+
+
+ target="_blank"
+ 
+
+
+>http://web.chacuo.net/charsetescape/</a></p>
+<h3 id="6bcrypt加密linux的shadow文件常用加密特征是一般有多个符分割">6、Bcrypt加密：linux的shadow文件常用加密，特征是一般有多个$符分割</h3>
+<h3 id="7bitlocker密钥正则表达式">7、bitlocker密钥正则表达式</h3>
+<p>^[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}$</p>
+<p>(#{6}-){7}#{6}</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </main>
+
+    
+    <footer class="bg-theme-light dark:bg-darkmode-theme-light">
+  <div class="container">
+    <div class="row items-center py-10">
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+        
+        <a
+          class="navbar-brand inline-block"
+          href="/">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-light"
+      width="160"
+      height="32"
+      src="/images/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_lanczos_3.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_lanczos_3.png';" />
+  
+  
+
+
+        </a>
+      </div>
+      <div class="lg:col-6 mb-8 text-center lg:mb-0">
+        <ul>
+          
+            <li class="m-3 inline-block">
+              <a
+                
+                href="
+                  /about/
+                "
+                >About</a
+              >
+            </li>
+          
+            <li class="m-3 inline-block">
+              <a
+                
+                href="
+                  /
+                "
+                >Privacy Policy</a
+              >
+            </li>
+          
+        </ul>
+      </div>
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+        <ul class="social-icons">
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="facebook"
+                rel="nofollow noopener"
+                href="https://www.facebook.com/">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="twitter"
+                rel="nofollow noopener"
+                href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="github"
+                rel="nofollow noopener"
+                href="https://www.github.com/">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="linkedin"
+                rel="nofollow noopener"
+                href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-border dark:border-darkmode-border border-t py-7">
+    <div class="text-light dark:text-darkmode-light container text-center">
+      <p>
+        Designed &amp; Developed by <a href="https://zeon.studio"
+
+
+
+
+ target="_blank"
+ 
+
+
+>Zeon Studio</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+    
+    
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+  crossorigin="anonymous"
+  integrity=""
+  src="/js/script.js"></script>
+
+
+<script
+  defer
+  async
+  crossorigin="anonymous"
+  integrity=""
+  src="/js/script-lazy.js"></script>
+
+
+
+<script>
+  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/service-worker.js");}
+</script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="application/javascript">
+      const announcementBox = document.getElementById('announcement');
+      const announcementButton = document.getElementById('announcement-button');
+      if (!Cookies.get('announcement-close')) {
+        announcementBox.classList.remove('announcement-hide');
+        announcementButton.onclick = function () {
+          Cookies.set('announcement-close', true, {
+            expires:  7 
+          });
+          announcementBox.classList.add('announcement-hide');
+        };
+      }
+    </script>
+  
+
+
+
+  </body>
+</html>

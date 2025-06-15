@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Hugoplate</title>
-    <link>https://xxcdu.github.io/tags/git/</link>
+    <link>//localhost:1313/tags/git/</link>
     <description>Recent content in Git on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xxcdu.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git pull 覆盖本地仓库后回滚</title>
-      <link>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
+      <link>//localhost:1313/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
+      <guid>//localhost:1313/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
       <description>1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &amp;ndash;hard 78ac8a0</description>
     </item>
     <item>
       <title>git pull 覆盖本地仓库后回滚</title>
-      <link>https://xxcdu.github.io/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
+      <link>//localhost:1313/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
+      <guid>//localhost:1313/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
       <description>1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &amp;ndash;hard 78ac8a0</description>
     </item>
   </channel>

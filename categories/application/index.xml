@@ -2,122 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Application on Hugoplate</title>
-    <link>https://xxcdu.github.io/categories/application/</link>
+    <link>//localhost:1313/categories/application/</link>
     <description>Recent content in Application on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xxcdu.github.io/categories/application/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Apr 2025 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker常用命令</title>
+      <link>//localhost:1313/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>原文链接：https://blog.csdn.net/Python_0011/article/details/140313812&#xA;原文链接：https://blog.csdn.net/Python_paipai/article/details/144389754&#xA;[TOC]&#xA;1、Docker运行 要在Docker中运行容器，可以使用以下命令：&#xA;docker run [OPTIONS] IMAGE [COMMAND] [ARG.</description>
+    </item>
+    <item>
+      <title>docker常用命令</title>
+      <link>//localhost:1313/english/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>原文链接：https://blog.csdn.net/Python_0011/article/details/140313812&#xA;原文链接：https://blog.csdn.net/Python_paipai/article/details/144389754&#xA;[TOC]&#xA;1、Docker运行 要在Docker中运行容器，可以使用以下命令：&#xA;docker run [OPTIONS] IMAGE [COMMAND] [ARG.</description>
+    </item>
+    <item>
+      <title>常见编码特征</title>
+      <link>//localhost:1313/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</guid>
+      <description>参考文章：30余种加密编码类型的密文特征分析（建议收藏）-腾讯云开发者社区-腾讯云&#xA;[TOC]&#xA;1、MD5、sha1、HMAC算法、NTLM等相似加密类型： （1）MD5 （例：21232F297A57A5A743894A0E4A801FC3）32位&#xA;由数字“0-9”和字母“a-f”所组成的字符串、。如果出现这个范围以外的字符说明这可能是个错误的md5值，没必要再拿去解密。&#xA;（2）sha1（例：d033e22ae348aeb5660fc2140aec35850c4da997）40位&#xA;（3）相似加密类型长度：&#xA;# 算法 长度 1 md5 32/16 2 sha1 40 3 sha256 64 4 sha512 128 5 adler32 8 6 crc32 8 7 crc32b 8 8 fnv132 8 9 fnv164 16 10 fnv1a32 8 11 fnv1a64 16 12 gost 64 13 gost-crypto 64 14 haval128,3 32 15 haval128,4 32 16 haval128,5 32 17 haval160,3 40 18 haval160,4 40 19 haval160,5 40 20 haval192,3 48 21 haval192,4 48 22 haval192,5 48 23 haval224,3 56 24 haval224,4 56 25 haval224,5 56 26 haval256,3 64 27 haval256,4 64 28 haval256,5 64 29 joaat 8 30 md2 32 31 md4 32 32 ripemd128 32 33 ripemd160 40 34 ripemd256 64 35 ripemd320 80 36 sha224 56 37 sha3-224 56 38 sha3-256 64 39 sha3-384 96 40 sha3-512 128 41 sha384 96 42 sha512/224 56 43 sha512/256 64 44 snefru 64 45 snefru256 64 46 tiger128,3 32 47 tiger128,4 32 48 tiger160,3 40 49 tiger160,4 40 50 tiger192,3 48 51 tiger192,4 48 52 whirlpool 128 53 mysql 老MYSQL数据库用的，16位，且第1位和第7位必须为0-8 54 mysql5 40 55 NTLM 32 56 Domain Cached Credentials 32 常用解密网站： www.</description>
+    </item>
+    <item>
+      <title>常见编码特征</title>
+      <link>//localhost:1313/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</guid>
+      <description>参考文章：30余种加密编码类型的密文特征分析（建议收藏）-腾讯云开发者社区-腾讯云&#xA;[TOC]&#xA;1、MD5、sha1、HMAC算法、NTLM等相似加密类型： （1）MD5 （例：21232F297A57A5A743894A0E4A801FC3）32位&#xA;由数字“0-9”和字母“a-f”所组成的字符串、。如果出现这个范围以外的字符说明这可能是个错误的md5值，没必要再拿去解密。&#xA;（2）sha1（例：d033e22ae348aeb5660fc2140aec35850c4da997）40位&#xA;（3）相似加密类型长度：&#xA;# 算法 长度 1 md5 32/16 2 sha1 40 3 sha256 64 4 sha512 128 5 adler32 8 6 crc32 8 7 crc32b 8 8 fnv132 8 9 fnv164 16 10 fnv1a32 8 11 fnv1a64 16 12 gost 64 13 gost-crypto 64 14 haval128,3 32 15 haval128,4 32 16 haval128,5 32 17 haval160,3 40 18 haval160,4 40 19 haval160,5 40 20 haval192,3 48 21 haval192,4 48 22 haval192,5 48 23 haval224,3 56 24 haval224,4 56 25 haval224,5 56 26 haval256,3 64 27 haval256,4 64 28 haval256,5 64 29 joaat 8 30 md2 32 31 md4 32 32 ripemd128 32 33 ripemd160 40 34 ripemd256 64 35 ripemd320 80 36 sha224 56 37 sha3-224 56 38 sha3-256 64 39 sha3-384 96 40 sha3-512 128 41 sha384 96 42 sha512/224 56 43 sha512/256 64 44 snefru 64 45 snefru256 64 46 tiger128,3 32 47 tiger128,4 32 48 tiger160,3 40 49 tiger160,4 40 50 tiger192,3 48 51 tiger192,4 48 52 whirlpool 128 53 mysql 老MYSQL数据库用的，16位，且第1位和第7位必须为0-8 54 mysql5 40 55 NTLM 32 56 Domain Cached Credentials 32 常用解密网站： www.</description>
+    </item>
+    <item>
+      <title>Windows进阶</title>
+      <link>//localhost:1313/blog/windows%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Sun, 20 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/windows%E8%BF%9B%E9%98%B6/</guid>
+      <description>1、忘记密码：PE盘进入BIOS启动电脑，ntpwedit工具进入系统盘C：/windows/system32/config/sam中修改密码&#xA;2、开机自启动：win+R输入shell：startup文件夹，将快捷方式复制进文件夹中即可（系统盘中的AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup）&#xA;3、（1）共享文件：文件属性中选择共享，作用户限制，在属性中选择高级共享设置。 （2）访问另一台PC的共享资源：WIN+R \ 目标ip地址 \ 目标共享文件夹名称。 （3）第三方软件专用网络资源共享：飞秋feiq、奶牛快传等。</description>
+    </item>
+    <item>
+      <title>Windows进阶</title>
+      <link>//localhost:1313/english/blog/windows%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Sun, 20 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/windows%E8%BF%9B%E9%98%B6/</guid>
+      <description>1、忘记密码：PE盘进入BIOS启动电脑，ntpwedit工具进入系统盘C：/windows/system32/config/sam中修改密码&#xA;2、开机自启动：win+R输入shell：startup文件夹，将快捷方式复制进文件夹中即可（系统盘中的AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup）&#xA;3、（1）共享文件：文件属性中选择共享，作用户限制，在属性中选择高级共享设置。 （2）访问另一台PC的共享资源：WIN+R \ 目标ip地址 \ 目标共享文件夹名称。 （3）第三方软件专用网络资源共享：飞秋feiq、奶牛快传等。</description>
+    </item>
     <item>
       <title>nginx基础</title>
-      <link>https://xxcdu.github.io/blog/nginx%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/blog/nginx%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 13 Apr 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
       <description>[TOC]&#xA;一、启动nginx systemctl start nginx&#xD;systemctl restart nginx #修改配置文件后重启&#xD;ps -ef | grep nginx #查看nginx进程&#xD;sudo systemctl status nginx #查看nginx状态 ​</description>
     </item>
     <item>
       <title>nginx基础</title>
-      <link>https://xxcdu.github.io/english/blog/nginx%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/english/blog/nginx%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 13 Apr 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/english/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
       <description>[TOC]&#xA;一、启动nginx systemctl start nginx&#xD;systemctl restart nginx #修改配置文件后重启&#xD;ps -ef | grep nginx #查看nginx进程&#xD;sudo systemctl status nginx #查看nginx状态 ​</description>
     </item>
     <item>
       <title>取证——存储与文件系统基础</title>
-      <link>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>//localhost:1313/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 30 Mar 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>//localhost:1313/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>一、磁盘结构&#xA;1、盘面：每个盘片有上下两个盘面，从上到下从0开始编号。&#xA;2、磁道：磁针画一圈叫一个磁道。&#xA;3、柱面：重叠的磁道形成一个圆柱的面。&#xA;4、扇区：每个磁道分为若干个弧度，一个磁道一般被分为63个扇区。大小一般为512B。&#xA;5、容量 = 盘面数*柱面数*扇区数*512B&#xA;6、簇：最小文件管理单位，由多个扇区构成，有2、4、8、16、32或64几种情况。如果为16个扇区，即8K=16*512，&#xA;二、硬盘的文件系统</description>
     </item>
     <item>
       <title>取证——存储与文件系统基础</title>
-      <link>https://xxcdu.github.io/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>//localhost:1313/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 30 Mar 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>//localhost:1313/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>一、磁盘结构&#xA;1、盘面：每个盘片有上下两个盘面，从上到下从0开始编号。&#xA;2、磁道：磁针画一圈叫一个磁道。&#xA;3、柱面：重叠的磁道形成一个圆柱的面。&#xA;4、扇区：每个磁道分为若干个弧度，一个磁道一般被分为63个扇区。大小一般为512B。&#xA;5、容量 = 盘面数*柱面数*扇区数*512B&#xA;6、簇：最小文件管理单位，由多个扇区构成，有2、4、8、16、32或64几种情况。如果为16个扇区，即8K=16*512，&#xA;二、硬盘的文件系统</description>
     </item>
     <item>
       <title>html基础</title>
-      <link>https://xxcdu.github.io/blog/html%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/blog/html%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/html%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/blog/html%E5%9F%BA%E7%A1%80/</guid>
       <description>1、标签 ：&amp;lt;标签&amp;gt; 2、元素：&amp;lt;p&amp;gt;.......&amp;lt;/p&amp;gt; 3、&amp;lt;!DOCTYPE&amp;gt; 声明：&#xD;（1）HTML5 ：&amp;lt;!DOCTYPE html&amp;gt;(不用区分大小写)&#xD;（2）HTML 4.01：&#xD;&amp;lt;!</description>
     </item>
     <item>
       <title>html基础</title>
-      <link>https://xxcdu.github.io/english/blog/html%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/english/blog/html%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/html%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/english/blog/html%E5%9F%BA%E7%A1%80/</guid>
       <description>1、标签 ：&amp;lt;标签&amp;gt; 2、元素：&amp;lt;p&amp;gt;.......&amp;lt;/p&amp;gt; 3、&amp;lt;!DOCTYPE&amp;gt; 声明：&#xD;（1）HTML5 ：&amp;lt;!DOCTYPE html&amp;gt;(不用区分大小写)&#xD;（2）HTML 4.01：&#xD;&amp;lt;!</description>
     </item>
     <item>
       <title>php基础</title>
-      <link>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/blog/php%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/php%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/blog/php%E5%9F%BA%E7%A1%80/</guid>
       <description>在线php手册：https://www.php.net/manualwww.php.net/manual&#xA;[TOC]&#xA;1、php标签 &amp;lt;?php&#xD;phpinfo()； #列举安装在特定服务器上的PHP的具体细节&#xD;?&amp;gt; php每一行后都要有分号“;”&#xA;2、注释 ​&#x9;单行注释：//或#</description>
     </item>
     <item>
       <title>php基础</title>
-      <link>https://xxcdu.github.io/english/blog/php%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/english/blog/php%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sat, 04 Jan 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/php%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/english/blog/php%E5%9F%BA%E7%A1%80/</guid>
       <description>在线php手册：https://www.php.net/manualwww.php.net/manual&#xA;[TOC]&#xA;1、php标签 &amp;lt;?php&#xD;phpinfo()； #列举安装在特定服务器上的PHP的具体细节&#xD;?&amp;gt; php每一行后都要有分号“;”&#xA;2、注释 ​&#x9;单行注释：//或#</description>
+    </item>
+    <item>
+      <title>服务器取证</title>
+      <link>//localhost:1313/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Sun, 08 May 2022 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</guid>
+      <description>centos等操作系统可以通过按alt键加1、2、3来切换不同的shell窗口。&#xA;1、框架搭建的网站，配置文件、后台入口进入方式等直接百度搜之。&#xA;2、php经典开发设计模式MVC（例如thinkphp等）：三个文件夹: controller（协调model和view之间的交互）、model（数据和业务逻辑，并提供数据访问api给controller）、view。主要看controller。&#xA;3、宝塔面板：&#xA;服务器根目录下有www目录，则多半是宝塔面板&#xA;宝塔面板重构中，找到了嫌疑人导出的数据库文件备份后，如果格式是.php格式，则是从phpmyadmin导出的，需要将后缀改为.sql再从phpmyadmin导入。&#xA;若服务器主机中的日志如history等被删除，宝塔面板中也可以查看面板日志获取所需信息。&#xA;找根目录时，如果是java做的网站，可以试试找启动脚本如start.sh等，通过其中信息来确定根目录。&#xA;4、虚拟化服务器ESXi：用弘连取证加载后，可以在分区中找vmx文件分别添加为新证据文件进行解析。但在esxi终端将虚拟机注册进虚拟服务器进行管理时可能会导致安装时间这个参数变成做题的这天的时间。记得在将ip改为动态设置之前记住改之前的静态ip地址，不然原ip就无了。</description>
+    </item>
+    <item>
+      <title>服务器取证</title>
+      <link>//localhost:1313/english/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Sun, 08 May 2022 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</guid>
+      <description>centos等操作系统可以通过按alt键加1、2、3来切换不同的shell窗口。&#xA;1、框架搭建的网站，配置文件、后台入口进入方式等直接百度搜之。&#xA;2、php经典开发设计模式MVC（例如thinkphp等）：三个文件夹: controller（协调model和view之间的交互）、model（数据和业务逻辑，并提供数据访问api给controller）、view。主要看controller。&#xA;3、宝塔面板：&#xA;服务器根目录下有www目录，则多半是宝塔面板&#xA;宝塔面板重构中，找到了嫌疑人导出的数据库文件备份后，如果格式是.php格式，则是从phpmyadmin导出的，需要将后缀改为.sql再从phpmyadmin导入。&#xA;若服务器主机中的日志如history等被删除，宝塔面板中也可以查看面板日志获取所需信息。&#xA;找根目录时，如果是java做的网站，可以试试找启动脚本如start.sh等，通过其中信息来确定根目录。&#xA;4、虚拟化服务器ESXi：用弘连取证加载后，可以在分区中找vmx文件分别添加为新证据文件进行解析。但在esxi终端将虚拟机注册进虚拟服务器进行管理时可能会导致安装时间这个参数变成做题的这天的时间。记得在将ip改为动态设置之前记住改之前的静态ip地址，不然原ip就无了。</description>
     </item>
     <item>
       <title>Django基础</title>
-      <link>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/blog/django%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/django%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/blog/django%E5%9F%BA%E7%A1%80/</guid>
       <description>一、虚拟环境 1、建立虚拟环境&#xA;python -m venv xxcdu 2、激活虚拟环境 windows：&#xA;xxcdu/Scripts/activate linux：</description>
     </item>
     <item>
       <title>Django基础</title>
-      <link>https://xxcdu.github.io/english/blog/django%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/english/blog/django%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/django%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/english/blog/django%E5%9F%BA%E7%A1%80/</guid>
       <description>一、虚拟环境 1、建立虚拟环境&#xA;python -m venv xxcdu 2、激活虚拟环境 windows：&#xA;xxcdu/Scripts/activate linux：</description>
     </item>
     <item>
       <title>git pull 覆盖本地仓库后回滚</title>
-      <link>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
+      <link>//localhost:1313/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
+      <guid>//localhost:1313/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
       <description>1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &amp;ndash;hard 78ac8a0</description>
     </item>
     <item>
       <title>git pull 覆盖本地仓库后回滚</title>
-      <link>https://xxcdu.github.io/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
+      <link>//localhost:1313/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
+      <guid>//localhost:1313/english/blog/git-pull%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E5%90%8E%E5%9B%9E%E6%BB%9A/</guid>
       <description>1、 git reflog --date=iso#查看仓库变更历史（按q退出日志） 2、寻找需要退回的版本号HEAD@{n}（日志左侧参数） 3、 git reset --hard HEAD@{n} 如git reset &amp;ndash;hard 78ac8a0</description>
     </item>
     <item>
       <title>python基础</title>
-      <link>https://xxcdu.github.io/blog/python%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/blog/python%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/python%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/blog/python%E5%9F%BA%E7%A1%80/</guid>
       <description>1、格式化字符串：f”······“ first_name = Bili&#xD;​&#x9;last_name = Halidon&#xD;​&#x9;full_name = f&amp;#34;{first_name}{last_name}&amp;#34;&#xD;​&#x9;print(f&amp;#34;Hello, {full_name.</description>
     </item>
     <item>
       <title>python基础</title>
-      <link>https://xxcdu.github.io/english/blog/python%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/english/blog/python%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/python%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/english/blog/python%E5%9F%BA%E7%A1%80/</guid>
       <description>1、格式化字符串：f”······“ first_name = Bili&#xD;​&#x9;last_name = Halidon&#xD;​&#x9;full_name = f&amp;#34;{first_name}{last_name}&amp;#34;&#xD;​&#x9;print(f&amp;#34;Hello, {full_name.</description>
     </item>
     <item>
       <title>start-hugo</title>
-      <link>https://xxcdu.github.io/blog/start-hugo/</link>
+      <link>//localhost:1313/blog/start-hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/start-hugo/</guid>
+      <guid>//localhost:1313/blog/start-hugo/</guid>
       <description>一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站： hugo new site /path/to/site;&#xA;2、克隆主题： git clone https://github.</description>
     </item>
     <item>
       <title>start-hugo</title>
-      <link>https://xxcdu.github.io/english/blog/start-hugo/</link>
+      <link>//localhost:1313/english/blog/start-hugo/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/start-hugo/</guid>
+      <guid>//localhost:1313/english/blog/start-hugo/</guid>
       <description>一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量&#xA;1、创建网站： hugo new site /path/to/site;&#xA;2、克隆主题： git clone https://github.</description>
     </item>
   </channel>

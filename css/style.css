@@ -2366,6 +2366,11 @@ input#nav-toggle:checked ~ #nav-menu {
 .opacity-100 {
   opacity: 1;
 }
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .bg-gradient {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: rgba(249,249,249,1) var(--tw-gradient-from-position);
@@ -2387,6 +2392,8 @@ input#nav-toggle:checked ~ #nav-menu {
 .rounded-lg {
   border-radius: 12px;
 }
+.shadow {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05); }
 
 .search-wrapper {
   position: relative;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>服务器 on Hugoplate</title>
+    <link>//localhost:1313/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <description>Recent content in 服务器 on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 May 2022 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>服务器取证</title>
+      <link>//localhost:1313/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Sun, 08 May 2022 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</guid>
+      <description>centos等操作系统可以通过按alt键加1、2、3来切换不同的shell窗口。&#xA;1、框架搭建的网站，配置文件、后台入口进入方式等直接百度搜之。&#xA;2、php经典开发设计模式MVC（例如thinkphp等）：三个文件夹: controller（协调model和view之间的交互）、model（数据和业务逻辑，并提供数据访问api给controller）、view。主要看controller。&#xA;3、宝塔面板：&#xA;服务器根目录下有www目录，则多半是宝塔面板&#xA;宝塔面板重构中，找到了嫌疑人导出的数据库文件备份后，如果格式是.php格式，则是从phpmyadmin导出的，需要将后缀改为.sql再从phpmyadmin导入。&#xA;若服务器主机中的日志如history等被删除，宝塔面板中也可以查看面板日志获取所需信息。&#xA;找根目录时，如果是java做的网站，可以试试找启动脚本如start.sh等，通过其中信息来确定根目录。&#xA;4、虚拟化服务器ESXi：用弘连取证加载后，可以在分区中找vmx文件分别添加为新证据文件进行解析。但在esxi终端将虚拟机注册进虚拟服务器进行管理时可能会导致安装时间这个参数变成做题的这天的时间。记得在将ip改为动态设置之前记住改之前的静态ip地址，不然原ip就无了。</description>
+    </item>
+    <item>
+      <title>服务器取证</title>
+      <link>//localhost:1313/english/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</link>
+      <pubDate>Sun, 08 May 2022 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</guid>
+      <description>centos等操作系统可以通过按alt键加1、2、3来切换不同的shell窗口。&#xA;1、框架搭建的网站，配置文件、后台入口进入方式等直接百度搜之。&#xA;2、php经典开发设计模式MVC（例如thinkphp等）：三个文件夹: controller（协调model和view之间的交互）、model（数据和业务逻辑，并提供数据访问api给controller）、view。主要看controller。&#xA;3、宝塔面板：&#xA;服务器根目录下有www目录，则多半是宝塔面板&#xA;宝塔面板重构中，找到了嫌疑人导出的数据库文件备份后，如果格式是.php格式，则是从phpmyadmin导出的，需要将后缀改为.sql再从phpmyadmin导入。&#xA;若服务器主机中的日志如history等被删除，宝塔面板中也可以查看面板日志获取所需信息。&#xA;找根目录时，如果是java做的网站，可以试试找启动脚本如start.sh等，通过其中信息来确定根目录。&#xA;4、虚拟化服务器ESXi：用弘连取证加载后，可以在分区中找vmx文件分别添加为新证据文件进行解析。但在esxi终端将虚拟机注册进虚拟服务器进行管理时可能会导致安装时间这个参数变成做题的这天的时间。记得在将ip改为动态设置之前记住改之前的静态ip地址，不然原ip就无了。</description>
+    </item>
+  </channel>
+</rss>

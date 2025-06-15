@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Hugoplate</title>
+    <link>//localhost:1313/tags/windows/</link>
+    <description>Recent content in Windows on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Apr 2025 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows进阶</title>
+      <link>//localhost:1313/blog/windows%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Sun, 20 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/windows%E8%BF%9B%E9%98%B6/</guid>
+      <description>1、忘记密码：PE盘进入BIOS启动电脑，ntpwedit工具进入系统盘C：/windows/system32/config/sam中修改密码&#xA;2、开机自启动：win+R输入shell：startup文件夹，将快捷方式复制进文件夹中即可（系统盘中的AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup）&#xA;3、（1）共享文件：文件属性中选择共享，作用户限制，在属性中选择高级共享设置。 （2）访问另一台PC的共享资源：WIN+R \ 目标ip地址 \ 目标共享文件夹名称。 （3）第三方软件专用网络资源共享：飞秋feiq、奶牛快传等。</description>
+    </item>
+    <item>
+      <title>Windows进阶</title>
+      <link>//localhost:1313/english/blog/windows%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Sun, 20 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/windows%E8%BF%9B%E9%98%B6/</guid>
+      <description>1、忘记密码：PE盘进入BIOS启动电脑，ntpwedit工具进入系统盘C：/windows/system32/config/sam中修改密码&#xA;2、开机自启动：win+R输入shell：startup文件夹，将快捷方式复制进文件夹中即可（系统盘中的AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup）&#xA;3、（1）共享文件：文件属性中选择共享，作用户限制，在属性中选择高级共享设置。 （2）访问另一台PC的共享资源：WIN+R \ 目标ip地址 \ 目标共享文件夹名称。 （3）第三方软件专用网络资源共享：飞秋feiq、奶牛快传等。</description>
+    </item>
+  </channel>
+</rss>

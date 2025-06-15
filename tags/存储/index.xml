@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>存储 on Hugoplate</title>
-    <link>https://xxcdu.github.io/tags/%E5%AD%98%E5%82%A8/</link>
+    <link>//localhost:1313/tags/%E5%AD%98%E5%82%A8/</link>
     <description>Recent content in 存储 on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 30 Mar 2025 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xxcdu.github.io/tags/%E5%AD%98%E5%82%A8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E5%AD%98%E5%82%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>取证——存储与文件系统基础</title>
-      <link>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>//localhost:1313/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 30 Mar 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>//localhost:1313/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>一、磁盘结构&#xA;1、盘面：每个盘片有上下两个盘面，从上到下从0开始编号。&#xA;2、磁道：磁针画一圈叫一个磁道。&#xA;3、柱面：重叠的磁道形成一个圆柱的面。&#xA;4、扇区：每个磁道分为若干个弧度，一个磁道一般被分为63个扇区。大小一般为512B。&#xA;5、容量 = 盘面数*柱面数*扇区数*512B&#xA;6、簇：最小文件管理单位，由多个扇区构成，有2、4、8、16、32或64几种情况。如果为16个扇区，即8K=16*512，&#xA;二、硬盘的文件系统</description>
     </item>
     <item>
       <title>取证——存储与文件系统基础</title>
-      <link>https://xxcdu.github.io/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>//localhost:1313/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 30 Mar 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>//localhost:1313/english/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>一、磁盘结构&#xA;1、盘面：每个盘片有上下两个盘面，从上到下从0开始编号。&#xA;2、磁道：磁针画一圈叫一个磁道。&#xA;3、柱面：重叠的磁道形成一个圆柱的面。&#xA;4、扇区：每个磁道分为若干个弧度，一个磁道一般被分为63个扇区。大小一般为512B。&#xA;5、容量 = 盘面数*柱面数*扇区数*512B&#xA;6、簇：最小文件管理单位，由多个扇区构成，有2、4、8、16、32或64几种情况。如果为16个扇区，即8K=16*512，&#xA;二、硬盘的文件系统</description>
     </item>
   </channel>

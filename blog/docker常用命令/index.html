@@ -1,0 +1,2365 @@
+<!doctype html>
+<html
+  itemscope
+  class=""
+  lang="en-us"
+  itemtype="http://schema.org/WebPage">
+  <head>
+    
+    <meta charset="utf-8" />
+
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+
+<meta name="theme-name" content="hugoplate" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_96x0_resize_lanczos_3.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_96x0_resize_lanczos_3.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_48x0_resize_lanczos_3.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_96x0_resize_lanczos_3.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hueb84ecec72665a83aae8c940dfe71474_1906_144x0_resize_lanczos_3.png">
+
+
+
+
+
+
+
+
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta
+  name="msapplication-TileColor"
+  content="#ddd" />
+<meta
+  name="theme-color"
+  content="#ffffff" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <base href="https://xxcdu.github.io/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+
+
+
+
+
+
+
+  
+
+
+<title>docker常用命令</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta
+    name="keywords"
+    content="Boilerplate, Hugo" />
+
+
+
+
+<meta
+  name="description"
+  content="this is meta description" />
+
+
+
+  <meta name="author" content="zeon.studio" />
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+      
+        <meta property="og:image" content="https://xxcdu.github.io/images/docker.png" />
+        <meta name="twitter:image" content="https://xxcdu.github.io/images/docker.png" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image" />
+      
+      
+      <meta property="og:image:width" content="1096" />
+      <meta property="og:image:height" content="480" />
+    
+
+
+    
+    <meta
+      property="og:image:type"
+      content="image/.png" />
+  
+
+
+  
+
+
+
+
+
+<meta property="og:title" content="docker常用命令" />
+<meta property="og:description" content="this is meta description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://xxcdu.github.io/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+
+
+<meta name="twitter:title" content="docker常用命令" />
+<meta name="twitter:description" content="this is meta description" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  let indexURL = "https://xxcdu.github.io/searchindex.json";
+  let includeSectionsInSearch = ["blog"];
+  let search_no_results = "No results for";
+  let search_initial_message = "Type something to search..";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//platform.linkedin.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com" />
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script>
+  (function () {
+    const googleFont = document.createElement("link");
+    googleFont.href = "https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Signika:wght@500;700&display=swap";
+    googleFont.type = "text/css";
+    googleFont.rel = "stylesheet";
+    document.head.appendChild(googleFont);
+  })();
+</script>
+
+
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<link
+  href="/css/style.min.576334aef8d1c810379fe2404721671d4540dd1a55d9d65884e53c60ef71136d.css"
+  integrity="sha256-V2M0rvjRyBA3n+JARyFnHUVA3RpV2dZYhOU8YO9xE20="
+  rel="stylesheet" />
+
+
+<link
+  defer
+  async
+  rel="stylesheet"
+  href="/css/style-lazy.min.5d85e889fd5f5b28f9387aeade847fcb0a66d76a99a985ab4cdae3d37cf21557.css"
+  integrity="sha256-XYXoif1fWyj5OHrq3oR/ywpm12qZqYWrTNrj03zyFVc="
+  media="print"
+  onload="this.media='all'; this.onload=null;" />
+
+
+  </head>
+
+  <body>
+    
+    
+      
+
+
+
+      
+
+    
+
+
+    
+    
+
+
+  <div id="announcement" class="announcement announcement-hide">
+    
+    <button id="announcement-button" class="announcement-button">
+      &times;
+    </button>
+  </div>
+
+  
+  <style>
+    .announcement {
+      position: relative;
+      z-index: 999;
+      padding: 1rem;
+      padding-right: 2.8rem;
+      background-color: #fff;
+      box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+      font-size: 1.1rem;
+    }
+    .announcement-button {
+      cursor: pointer;
+      padding: 0 0.5rem;
+      border: 0;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      border: 1px solid;
+      border-radius: 50%;
+      height: 1.1em;
+      width: 1.1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .announcement-hide {
+      display: none;
+    }
+    .dark .announcement {
+      background-color: #222;
+    }
+  </style>
+
+
+
+
+    
+    <header
+  class="header sticky top-0 z-30">
+  <nav class="navbar container">
+    
+    <div class="order-0">
+      
+      <a class="navbar-brand block" href="/">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-light"
+      width="160"
+      height="32"
+      src="/images/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_lanczos_3.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_lanczos_3.png';" />
+  
+  
+
+
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
+      
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/about/"
+              >About</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/blog/"
+              >Blog</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item nav-dropdown group relative">
+            <span
+              class="nav-link 
+                
+                
+                
+              
+                
+                
+                
+              
+                
+                
+                
+              
+                
+                
+                
+               inline-flex items-center">
+              Pages
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </span>
+            <ul
+              class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/404.html">
+                    404 Page
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/authors/">
+                    Authors
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/categories/">
+                    Categories
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/contact/">
+                    Contact
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      
+      
+        <li class="mt-4 inline-block lg:hidden">
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="/contact">
+            get a quote
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      
+        
+          <button
+            aria-label="search"
+            
+            class="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
+            
+            data-target="search-modal">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        
+      
+
+      
+
+
+
+
+
+
+
+
+
+      
+
+
+  <div class="theme-switcher mr-5">
+    <input id="theme-switcher" data-theme-switcher type="checkbox" />
+    <label for="theme-switcher">
+      <span class="sr-only">theme switcher</span>
+      <span>
+        
+        <svg
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-100 dark:opacity-0"
+          viewBox="0 0 56 56"
+          fill="#fff"
+          height="16"
+          width="16">
+          <path
+            d="M30 4.6c0-1-.9-2-2-2a2 2 0 0 0-2 2v5c0 1 .9 2 2 2s2-1 2-2Zm9.6 9a2 2 0 0 0 0 2.8c.8.8 2 .8 2.9 0L46 13a2 2 0 0 0 0-2.9 2 2 0 0 0-3 0Zm-26 2.8c.7.8 2 .8 2.8 0 .8-.7.8-2 0-2.9L13 10c-.7-.7-2-.8-2.9 0-.7.8-.7 2.1 0 3ZM28 16a12 12 0 0 0-12 12 12 12 0 0 0 12 12 12 12 0 0 0 12-12 12 12 0 0 0-12-12Zm23.3 14c1.1 0 2-.9 2-2s-.9-2-2-2h-4.9a2 2 0 0 0-2 2c0 1.1 1 2 2 2ZM4.7 26a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4.9c1 0 2-.9 2-2s-1-2-2-2Zm37.8 13.6a2 2 0 0 0-3 0 2 2 0 0 0 0 2.9l3.6 3.5a2 2 0 0 0 2.9 0c.8-.8.8-2.1 0-3ZM10 43.1a2 2 0 0 0 0 2.9c.8.7 2.1.8 3 0l3.4-3.5c.8-.8.8-2.1 0-2.9-.8-.8-2-.8-2.9 0Zm20 3.4c0-1.1-.9-2-2-2a2 2 0 0 0-2 2v4.9c0 1 .9 2 2 2s2-1 2-2Z" />
+        </svg>
+        
+        <svg
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-0 dark:opacity-100"
+          viewBox="0 0 24 24"
+          fill="none"
+          height="16"
+          width="16">
+          <path
+            fill="#000"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.2 2.2c1-.4 2 .6 1.6 1.5-1 3-.4 6.4 1.8 8.7a8.4 8.4 0 0 0 8.7 1.8c1-.3 2 .5 1.5 1.5v.1a10.3 10.3 0 0 1-9.4 6.2A10.3 10.3 0 0 1 3.2 6.7c1-2 2.9-3.5 4.9-4.4Z" />
+        </svg>
+      </span>
+    </label>
+  </div>
+
+  
+  <script>
+    var darkMode = false;
+
+    
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches){darkMode = true}
+    
+
+    if (localStorage.getItem("theme") === "dark"){darkMode = true}
+    else if (localStorage.getItem("theme") === "light"){darkMode = false}
+    if (darkMode){document.documentElement.classList.toggle("dark")}
+    var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
+
+    document.addEventListener("DOMContentLoaded", () => {
+      [].forEach.call(themeSwitch, function (ts) {
+        ts.checked = darkMode ? true : false;
+        ts.addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+          localStorage.setItem(
+            "theme",
+            document.documentElement.classList.contains("dark") ? "dark" : "light"
+          );
+        });
+      });
+    });
+  </script>
+
+
+
+
+      
+      
+        <a
+          href="/contact"
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          get a quote
+        </a>
+      
+    </div>
+  </nav>
+</header>
+
+    
+
+
+
+
+  
+    <div
+      class="search-modal "
+      aria-hidden="true"
+      style="--color-primary: #121212">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
+          <label for="search-modal-input" style="margin-top:-1px">
+            <span class="sr-only">search icon</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              height="18"
+              width="18"
+              class="search-icon"
+              data-type="search">
+              <path
+                fill="currentColor"
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              height="18"
+              width="18"
+              class="search-reset"
+              data-type="reset">
+              <path
+                fill="currentColor"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+            </svg>
+          </label>
+          <input
+            id="search-modal-input"
+            type="text"
+            data-search-input
+            autocomplete="off"
+            aria-label="Search"
+            placeholder="Search Post..." />
+        </div>
+        <div class="search-wrapper-body">
+          <div class="search-result" data-search-result></div>
+          <span class="search-result-empty">
+            Type something to search..
+          </span>
+        </div>
+        <div class="search-wrapper-footer">
+          <span>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+              </svg>
+            </kbd>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                style="margin-top:1px;"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+              </svg>
+            </kbd>
+            to navigate
+          </span>
+          <span>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                fill="currentColor"
+                style="display:inline-block;"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+              </svg>
+            </kbd>
+            to select
+          </span>
+          <span class="search-result-info"></span>
+          <span data-target="close-search-modal">
+            <kbd>ESC</kbd> to close
+          </span>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+    <main>
+      
+  <section class="section pt-7">
+    <div class="container">
+      <div class="row justify-center">
+        <article class="lg:col-10">
+          
+          
+            <div class="mb-10">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/docker_hu32a54cf14bad5c458a56f57f4a8f6bd7_298291_545x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/docker_hu32a54cf14bad5c458a56f57f4a8f6bd7_298291_600x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/docker_hu32a54cf14bad5c458a56f57f4a8f6bd7_298291_700x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/docker_hu32a54cf14bad5c458a56f57f4a8f6bd7_298291_1110x0_resize_q80_h2_lanczos_3.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/docker_hu32a54cf14bad5c458a56f57f4a8f6bd7_298291_1110x0_resize_lanczos_3.png"
+            class=" w-full rounded img"
+            alt="docker常用命令"
+            width="1096"
+            height="480" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+            </div>
+          
+          <h1 class="h2 mb-4">
+            docker常用命令
+          </h1>
+          <ul class="mb-4">
+            <li class="mr-4 inline-block">
+              <a
+                href="/authors/xxcdu/">
+                <i class="fa-regular fa-circle-user mr-2"></i
+                >xxcdu
+              </a>
+            </li>
+            
+            
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-folder mr-2"></i>
+                
+                  <a
+                    href="/categories/application/"
+                    class=""
+                    >Application
+                      ,
+                    
+                  </a>
+                
+                  <a
+                    href="/categories/data/"
+                    class=""
+                    >Data
+                  </a>
+                
+              </li>
+            
+            <li class="mr-4 inline-block">
+              <i class="fa-regular fa-clock mr-2"></i>
+              April 25, 2025
+            </li>
+          </ul>
+          <div class="content mb-10">
+            
+
+ 
+  
+
+<details open class="table-of-content blog">
+  <summary>
+    
+      Table of Contents
+    
+  </summary>
+  <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#1docker运行">1、Docker运行</a></li>
+            <li><a href="#2docker构建">2、Docker构建</a></li>
+            <li><a href="#3docker-pull">3、Docker pull</a></li>
+            <li><a href="#4docker-push">4、Docker push</a></li>
+            <li><a href="#5docker-images">5、Docker images</a></li>
+            <li><a href="#6docker-ps">6、Docker ps</a></li>
+            <li><a href="#7docker-stop">7、Docker stop</a></li>
+            <li><a href="#8docker-start">8、Docker start</a></li>
+            <li><a href="#9docker-restart">9、Docker restart</a></li>
+            <li><a href="#10docker-kill">10、Docker kill</a></li>
+            <li><a href="#11docker-rmdocker-rmi">11、Docker rm/docker rmi</a></li>
+            <li><a href="#12docker-exec">12、Docker exec</a></li>
+            <li><a href="#13docker-logs">13、Docker logs</a></li>
+            <li><a href="#14docker-inspect">14、Docker inspect</a></li>
+            <li><a href="#15docker-cp">15、Docker cp</a></li>
+            <li><a href="#16docker-system-prune">16、Docker system prune</a></li>
+            <li><a href="#17docker-network">17、Docker network</a></li>
+            <li><a href="#18docker-volume">18、Docker volume</a></li>
+            <li><a href="#19docker-compose">19、Docker-compose</a></li>
+            <li><a href="#20docker-swarm">20、Docker swarm</a></li>
+            <li><a href="#21dockerfile">21、Dockerfile</a></li>
+            <li><a href="#22docker登录和认证">22、Docker登录和认证</a></li>
+            <li><a href="#23docker容器日志管理">23、Docker容器日志管理</a></li>
+            <li><a href="#24docker-运维命令">24、Docker 运维命令</a></li>
+            <li><a href="#25docker监控相关">25、docker监控相关</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</details>
+
+            <p>原文链接：https://blog.csdn.net/Python_0011/article/details/140313812</p>
+<p>原文链接：https://blog.csdn.net/Python_paipai/article/details/144389754</p>
+<p>[TOC]</p>
+<h4 id="1docker运行">1、Docker运行</h4>
+<p>要在Docker中运行容器，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+• docker run：运行容器的命令。
+
+• [OPTIONS]：可选参数，用于配置容器的各种选项，如端口映射、容器名称等。
+
+• IMAGE：要运行的镜像名称或ID。
+
+• [COMMAND] [ARG...]：可选的命令和参数，用于在容器内执行特定的命令。
+</code></pre><p>​</p>
+<h4 id="2docker构建">2、Docker构建</h4>
+<p>要构建自己的Docker镜像，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker build [OPTIONS] PATH | URL | -
+• docker build：构建镜像的命令。
+
+• [OPTIONS]：可选参数，用于配置构建过程，如镜像标签、构建上下文路径等。
+
+• PATH | URL | -：Dockerfile所在的路径、URL或者使用标准输入作为Dockerfile。
+</code></pre><p>​</p>
+<h4 id="3docker-pull">3、Docker pull</h4>
+<p>要从Docker仓库中拉取现有的镜像，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+• docker pull：拉取镜像的命令。
+
+• [OPTIONS]：可选参数，用于配置拉取过程，如认证信息等。
+
+• NAME[:TAG|@DIGEST]：要拉取的镜像名称、标签或摘要。
+</code></pre><h4 id="4docker-push">4、Docker push</h4>
+<p>要将本地的镜像推送到Docker仓库，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker push [OPTIONS] NAME[:TAG]
+1
+• docker push：推送镜像的命令。
+
+• [OPTIONS]：可选参数，用于配置推送过程，如认证信息等。
+
+• NAME[:TAG]：要推送的镜像名称和标签。
+</code></pre><p>​</p>
+<h4 id="5docker-images">5、Docker images</h4>
+<p>要列出本地所有的镜像，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker images [OPTIONS] [REPOSITORY[:TAG]]
+• docker images：列出镜像的命令。
+
+• [OPTIONS]：可选参数，用于配置输出结果的格式等。
+
+• [REPOSITORY[:TAG]]：可选的镜像名称和标签，用于过滤输出结果。
+</code></pre><p>​</p>
+<h4 id="6docker-ps">6、Docker ps</h4>
+<p>要列出正在运行的容器，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker ps [OPTIONS]
+• docker ps：列出容器的命令。
+
+• [OPTIONS]：可选参数，用于配置输出结果的格式和过滤条件。
+
+-a参数：列出所有容器，包括非运行状态。
+</code></pre><p>​</p>
+<h4 id="7docker-stop">7、Docker stop</h4>
+<p>要停止正在运行的容器，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker stop [OPTIONS] CONTAINER [CONTAINER...]
+• docker stop：停止容器的命令。
+
+• [OPTIONS]：可选参数，用于配置停止过程，如超时时间等。
+
+• CONTAINER [CONTAINER...]：要停止的容器名称或ID。
+</code></pre><p>​</p>
+<h4 id="8docker-start">8、Docker start</h4>
+<p>要启动已停止的容器，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker start [OPTIONS] CONTAINER [CONTAINER...]
+• docker start：启动容器的命令。
+
+• [OPTIONS]：可选参数，用于配置启动过程，如守护模式等。
+
+• CONTAINER [CONTAINER...]：要启动的容器名称或ID。
+</code></pre><p>​</p>
+<h4 id="9docker-restart">9、Docker restart</h4>
+<p>要重启正在运行的容器，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker restart [OPTIONS] CONTAINER [CONTAINER...]
+• docker restart：重启容器的命令。
+
+• [OPTIONS]：可选参数，用于配置重启过程，如超时时间等。
+
+• CONTAINER [CONTAINER...]：要重启的容器名称或ID。
+</code></pre><p>​</p>
+<h4 id="10docker-kill">10、Docker kill</h4>
+<p>要强制终止正在运行的容器，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker kill [OPTIONS] CONTAINER [CONTAINER...]
+• docker kill：终止容器的命令。
+
+• [OPTIONS]：可选参数，用于配置终止过程，如信号等。
+
+• CONTAINER [CONTAINER...]：要终止的容器名称或ID。
+</code></pre><p>​</p>
+<h4 id="11docker-rmdocker-rmi">11、Docker rm/docker rmi</h4>
+<p>要删除已停止的容器或镜像，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker rm [OPTIONS] CONTAINER [CONTAINER...]   docker rmi [OPTIONS] IMAGE [IMAGE...]
+• docker rm：删除容器的命令。 #删除多个 其镜像ID或镜像用用空格隔开即可
+
+• docker rmi：删除镜像的命令。
+
+• [OPTIONS]：可选参数，用于配置删除过程，如强制删除等。
+
+• CONTAINER [CONTAINER...]：要删除的容器名称或ID。
+
+• IMAGE [IMAGE...]：要删除的镜像名称或ID。
+</code></pre><p>​</p>
+<h4 id="12docker-exec">12、Docker exec</h4>
+<p>要在运行中的容器内执行命令，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+• docker exec：在容器内执行命令的命令。
+
+• [OPTIONS]：可选参数，用于配置执行过程，如进入交互模式等。
+
+• CONTAINER：要执行命令的容器名称或ID。
+
+• COMMAND [ARG...]：要在容器内执行的命令及其参数。
+</code></pre><p>​</p>
+<h4 id="13docker-logs">13、Docker logs</h4>
+<p>要查看容器的日志输出，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker logs [OPTIONS] CONTAINER
+• docker logs：查看容器日志的命令。
+
+• [OPTIONS]：可选参数，用于配置输出结果，如时间戳等。
+
+• CONTAINER：要查看日志的容器名称或ID。
+</code></pre><p>​</p>
+<h4 id="14docker-inspect">14、Docker inspect</h4>
+<p>要获取容器或镜像的详细信息，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+• docker inspect：获取详细信息的命令。
+
+• [OPTIONS]：可选参数，用于配置输出结果的格式等。
+
+• NAME|ID [NAME|ID...]：要获取信息的容器或镜像的名称或ID。
+</code></pre><p>​</p>
+<h4 id="15docker-cp">15、Docker cp</h4>
+<p>要在容器和主机之间复制文件或目录，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH   docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
+• docker cp：复制文件或目录的命令。
+
+• [OPTIONS]：可选参数，用于配置复制过程，如权限等。
+
+• CONTAINER:SRC_PATH：源路径，其中CONTAINER是容器名称或ID。
+
+• DEST_PATH：目标路径，其中DEST_PATH是主机路径。
+
+• SRC_PATH|-：源路径，其中-表示从标准输入读取。
+</code></pre><p>​</p>
+<h4 id="16docker-system-prune">16、Docker system prune</h4>
+<p>要清理不再使用的镜像、容器和其他资源，可以使用以下命令：</p>
+<pre tabindex="0"><code>docker system prune [OPTIONS]
+• docker system prune：清理资源的命令。
+
+• [OPTIONS]：可选参数，用于配置清理过程，如强制删除等。
+</code></pre><p>​</p>
+<h4 id="17docker-network">17、Docker network</h4>
+<p>Docker网络允许容器之间进行通信和连接到外部网络。以下是一些与Docker网络相关的常用命令：</p>
+<pre tabindex="0"><code>• docker network ls：列出所有的Docker网络。
+
+• docker network create：创建一个新的Docker网络。
+
+• docker network connect：将容器连接到指定的Docker网络。
+
+• docker network disconnect：将容器从指定的Docker网络断开连接。
+</code></pre><h4 id="18docker-volume">18、Docker volume</h4>
+<p>Docker卷用于在容器和主机之间持久化存储数据。以下是一些与Docker卷相关的常用命令：</p>
+<pre tabindex="0"><code>• docker volume ls：列出所有的Docker卷。
+
+• docker volume create：创建一个新的Docker卷。
+
+• docker volume inspect：获取Docker卷的详细信息。
+
+• docker volume rm：删除指定的Docker卷。
+</code></pre><p>​</p>
+<h4 id="19docker-compose">19、Docker-compose</h4>
+<p>Docker-compose是一个用于定义和运行多个容器应用程序的工具。它使用YAML文件来配置应用程序的服务、网络和卷等。以下是一些与Docker-compose相关的常用命令：</p>
+<pre tabindex="0"><code>• docker-compose up：构建并启动Docker-compose定义的所有服务。
+
+• docker-compose down：停止并删除Docker-compose定义的所有服务。
+
+• docker-compose build：构建Docker-compose定义的所有服务的镜像。
+
+• docker-compose logs：查看Docker-compose定义的所有服务的日志。
+</code></pre><p>​</p>
+<h4 id="20docker-swarm">20、Docker swarm</h4>
+<p>Docker swarm是Docker的原生集群管理和编排工具，用于在多个Docker主机上运行和管理应用程序。以下是一些与Docker swarm相关的常用命令：</p>
+<pre tabindex="0"><code>• docker swarm init：初始化一个新的Docker swarm集群。
+
+• docker swarm join：将节点加入到Docker swarm集群。
+
+• docker node ls：列出Docker swarm集群中的所有节点。
+
+• docker service：管理在Docker swarm集群中运行的服务。
+</code></pre><p>​</p>
+<h4 id="21dockerfile">21、Dockerfile</h4>
+<p>Dockerfile是用于定义Docker镜像构建过程的文本文件。它包含一系列的指令和配置，用于指导Docker引擎在构建过程中执行特定的操作。以下是一些与Dockerfile相关的常用命令：</p>
+<pre tabindex="0"><code>• FROM：指定基础镜像。
+
+• RUN：在容器内执行命令。
+
+• COPY：将文件或目录从主机复制到容器内。
+
+• ADD：将文件或目录从主机复制到容器内，并支持URL和解压缩操作。
+
+• WORKDIR：设置工作目录。
+
+• EXPOSE：声明容器运行时监听的端口。
+
+• CMD：指定容器启动时要执行的命令。
+</code></pre><p>这些命令可以在Dockerfile中按照特定的顺序组合使用，以定义和构建自定义的Docker镜像。</p>
+<p>​</p>
+<h4 id="22docker登录和认证">22、Docker登录和认证</h4>
+<p>要登录到Docker仓库或私有镜像仓库，可以使用以下命令：</p>
+<pre tabindex="0"><code>• docker login：登录到Docker仓库。
+
+• docker logout：退出登录。
+</code></pre><p>登录后可以使用docker pull和docker push命令来拉取和推送镜像。</p>
+<p>​</p>
+<h4 id="23docker容器日志管理">23、Docker容器日志管理</h4>
+<p>除了使用docker logs命令查看容器日志外，还可以使用以下命令对容器日志进行管理：</p>
+<pre tabindex="0"><code>• docker logs --tail：只显示最后几行的日志。
+
+• docker logs --follow：实时跟踪容器的日志输出。
+
+• docker logs --since：只显示特定时间之后的日志。
+
+• docker logs --until：只显示特定时间之前的日志。
+</code></pre><p>​</p>
+<h4 id="24docker-运维命令">24、Docker 运维命令</h4>
+<p>1.启动Docker</p>
+<pre tabindex="0"><code>sudo systemctl start docker
+</code></pre><p>2.docker开机自启</p>
+<pre tabindex="0"><code>sudo systemctl enable docker
+</code></pre><p>3.查看docker日志</p>
+<pre tabindex="0"><code>journalctl -u docker.service or less /var/log/messages | grep Docker
+</code></pre><p>（journalctl是一个用于查询和操作由systemd进程管理的日志的工具）</p>
+<p>4.查看服务运行状态</p>
+<pre tabindex="0"><code>systemctl status docker.service
+</code></pre><p>​</p>
+<h4 id="25docker监控相关">25、docker监控相关</h4>
+<p>1.查看容器的资源使用率</p>
+<pre tabindex="0"><code>docker stats CONTAINER_ID
+</code></pre><p>2.限制cpu和内存资源</p>
+<pre tabindex="0"><code>docker run --cpus=1 -m=2g --name=nginx -d nginx
+</code></pre><p>3.查看磁盘使用大小</p>
+<pre tabindex="0"><code>docker system df
+</code></pre><p>4.查看每个 image、container 详细大小</p>
+<pre tabindex="0"><code>docker system df -v
+</code></pre><p>5.查看dir路径</p>
+<pre tabindex="0"><code>docker info|grep -i dir
+</code></pre>
+          </div>
+          <div class="row items-start justify-between">
+            
+            
+              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+                <h5 class="mr-3">Tags :</h5>
+                <ul>
+                  
+                    <li class="inline-block">
+                      <a
+                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        href="/tags/docker/">
+                        Docker
+                      </a>
+                    </li>
+                  
+                    <li class="inline-block">
+                      <a
+                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        href="/tags/%e7%94%b5%e5%ad%90%e6%95%b0%e6%8d%ae%e5%8f%96%e8%af%81/">
+                        电子数据取证
+                      </a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+            <div class="lg:col-4 flex items-center">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share-icons">
+  <h5 class="share-title">Share :</h5>
+
+
+  
+  
+    <a
+      class="share-link share-facebook"
+      href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fxxcdu.github.io%2fblog%2fdocker%25E5%25B8%25B8%25E7%2594%25A8%25E5%2591%25BD%25E4%25BB%25A4%2f"
+      target="_blank"
+      rel="noopener"
+      aria-label="share facebook">
+      <span class="share-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+        </svg>
+      </span>
+    </a>
+  
+
+
+  
+  
+    <a
+      class="share-link share-twitter"
+      href="https://twitter.com/intent/tweet/?text=Share&amp;url=https%3a%2f%2fxxcdu.github.io%2fblog%2fdocker%25E5%25B8%25B8%25E7%2594%25A8%25E5%2591%25BD%25E4%25BB%25A4%2f"
+      target="_blank"
+      rel="noopener"
+      aria-label="share twitter">
+      <span aria-hidden="true" class="share-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path 
+            d="M8 2H1l8.26 11.015L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886zm9 18L5 4h2l12 16z"/>
+        </svg>
+      </span>
+    </a>
+  
+
+
+  
+  
+    <a
+      class="share-link share-email"
+      href="mailto:?subject=Share&amp;body=https%3a%2f%2fxxcdu.github.io%2fblog%2fdocker%25E5%25B8%25B8%25E7%2594%25A8%25E5%2591%25BD%25E4%25BB%25A4%2f"
+      target="_self"
+      rel="noopener"
+      aria-label="share email">
+      <span aria-hidden="true" class="share-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
+        </svg>
+      </span>
+    </a>
+  
+
+
+  
+  
+    <a
+      class="share-link share-reddit"
+      href="https://reddit.com/submit/?url=https%3a%2f%2fxxcdu.github.io%2fblog%2fdocker%25E5%25B8%25B8%25E7%2594%25A8%25E5%2591%25BD%25E4%25BB%25A4%2f&amp;resubmit=true&amp;title=Share"
+      target="_blank"
+      rel="noopener"
+      aria-label="share reddit">
+      <span aria-hidden="true" class="share-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z" />
+        </svg>
+      </span>
+    </a>
+  
+
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+</div>
+
+            </div>
+          </div>
+          
+          
+            <div class="mt-20">
+              <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "themefisher-template" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+          
+        </article>
+      </div>
+
+      
+      
+      
+      
+        <div class="section pb-0">
+          <h2 class="h3 mb-12">Related Posts</h2>
+          <div class="row">
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/%E7%BC%96%E7%A0%81_hue22c48af6540722a702793f7e0705469_951336_545x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/%E7%BC%96%E7%A0%81_hue22c48af6540722a702793f7e0705469_951336_600x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/%E7%BC%96%E7%A0%81_hue22c48af6540722a702793f7e0705469_951336_700x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/%E7%BC%96%E7%A0%81_hue22c48af6540722a702793f7e0705469_951336_1110x0_resize_q80_h2_lanczos_3.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/%E7%BC%96%E7%A0%81_hue22c48af6540722a702793f7e0705469_951336_1110x0_resize_lanczos_3.png"
+            class=" mb-6 w-full rounded img"
+            alt="常见编码特征"
+            width="1096"
+            height="480" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/">
+      常见编码特征
+    </a>
+  </h4>
+  
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/authors/xxcdu/">
+          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/application/"
+            class="ms-1"
+            >Application
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/data/"
+            class="ms-1"
+            >Data
+          </a>
+        
+      </li>
+    </ul>
+  
+  <p class="mb-6">参考文章：30余种加密编码类型的密文特征分析（建议收藏）-腾讯云开发者社区-腾讯云
+[TOC]
+1、MD5、sha1、HMAC算法、NTLM等相似加密类型： （1）MD5 （例：21232F297A57A5A743894A0E4A801FC3）32位
+由数字“0-9”和字母“a-f”所组成的字符串、。如果出现这个范围以外的字符说明这可能是个错误的md5值，没必要再拿去解密。
+（2）sha1（例：d033e22ae348aeb5660fc2140aec35850c4da997）40位
+（3）相似加密类型长度：
+# 算法 长度 1 md5 32/16 2 sha1 40 3 sha256 64 4 sha512 128 5 adler32 8 6 crc32 8 7 crc32b 8 8 fnv132 8 9 fnv164 16 10 fnv1a32 8 11 fnv1a64 16 12 gost 64 13 gost-crypto 64 14 haval128,3 32 15 haval128,4 32 16 haval128,5 32 17 haval160,3 40 18 haval160,4 40 19 haval160,5 40 20 haval192,3 48 21 haval192,4 48 22 haval192,5 48 23 haval224,3 56 24 haval224,4 56 25 haval224,5 56 26 haval256,3 64 27 haval256,4 64 28 haval256,5 64 29 joaat 8 30 md2 32 31 md4 32 32 ripemd128 32 33 ripemd160 40 34 ripemd256 64 35 ripemd320 80 36 sha224 56 37 sha3-224 56 38 sha3-256 64 39 sha3-384 96 40 sha3-512 128 41 sha384 96 42 sha512/224 56 43 sha512/256 64 44 snefru 64 45 snefru256 64 46 tiger128,3 32 47 tiger128,4 32 48 tiger160,3 40 49 tiger160,4 40 50 tiger192,3 48 51 tiger192,4 48 52 whirlpool 128 53 mysql 老MYSQL数据库用的，16位，且第1位和第7位必须为0-8 54 mysql5 40 55 NTLM 32 56 Domain Cached Credentials 32 常用解密网站： www.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/">
+    Read More
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/%E6%9C%8D%E5%8A%A1%E5%99%A8_hu37109df969c400c4b109ed7c5b6b8c8a_1276477_545x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/%E6%9C%8D%E5%8A%A1%E5%99%A8_hu37109df969c400c4b109ed7c5b6b8c8a_1276477_600x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/%E6%9C%8D%E5%8A%A1%E5%99%A8_hu37109df969c400c4b109ed7c5b6b8c8a_1276477_700x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/%E6%9C%8D%E5%8A%A1%E5%99%A8_hu37109df969c400c4b109ed7c5b6b8c8a_1276477_1110x0_resize_q80_h2_lanczos_3.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/%E6%9C%8D%E5%8A%A1%E5%99%A8_hu37109df969c400c4b109ed7c5b6b8c8a_1276477_1110x0_resize_lanczos_3.png"
+            class=" mb-6 w-full rounded img"
+            alt="服务器取证"
+            width="1096"
+            height="480" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/">
+      服务器取证
+    </a>
+  </h4>
+  
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/authors/xxcdu/">
+          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/application/"
+            class="ms-1"
+            >Application
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/data/"
+            class="ms-1"
+            >Data
+          </a>
+        
+      </li>
+    </ul>
+  
+  <p class="mb-6"></p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/">
+    Read More
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_545x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_600x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_700x0_resize_q80_h2_lanczos_3.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_q80_h2_lanczos_3.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/hugo_img_hu419e84fff60dc065fb8d9e8a54a05a09_53868_1110x0_resize_lanczos_3.png"
+            class=" mb-6 w-full rounded img"
+            alt="start-hugo"
+            width="1127"
+            height="491" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/start-hugo/">
+      start-hugo
+    </a>
+  </h4>
+  
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/authors/xxcdu/">
+          <i class="fa-regular fa-circle-user mr-2"></i>xxcdu
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/application/"
+            class="ms-1"
+            >Application
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/data/"
+            class="ms-1"
+            >Data
+          </a>
+        
+      </li>
+    </ul>
+  
+  <p class="mb-6">一、start hugo 条件：配置好git，下载hugo，将hugo所在目录放入环境变量
+1、创建网站： hugo new site /path/to/site;
+2、克隆主题： git clone https://github.</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/start-hugo/">
+    Read More
+  </a>
+</div>
+
+              </div>
+            
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+    </main>
+
+    
+    <footer class="bg-theme-light dark:bg-darkmode-theme-light">
+  <div class="container">
+    <div class="row items-center py-10">
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+        
+        <a
+          class="navbar-brand inline-block"
+          href="/">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-light"
+      width="160"
+      height="32"
+      src="/images/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo_hud3822dc52499c854acb9b180fed4f736_3648_320x0_resize_lanczos_3.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img logo-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_q80_h2_lanczos_3.webp"
+      alt="Hugoplate"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu95dd250582672ebe0c063cf60eed448f_3090_320x0_resize_lanczos_3.png';" />
+  
+  
+
+
+        </a>
+      </div>
+      <div class="lg:col-6 mb-8 text-center lg:mb-0">
+        <ul>
+          
+            <li class="m-3 inline-block">
+              <a
+                
+                href="
+                  /about/
+                "
+                >About</a
+              >
+            </li>
+          
+            <li class="m-3 inline-block">
+              <a
+                
+                href="
+                  /
+                "
+                >Privacy Policy</a
+              >
+            </li>
+          
+        </ul>
+      </div>
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+        <ul class="social-icons">
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="facebook"
+                rel="nofollow noopener"
+                href="https://www.facebook.com/">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="twitter"
+                rel="nofollow noopener"
+                href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="github"
+                rel="nofollow noopener"
+                href="https://www.github.com/">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="linkedin"
+                rel="nofollow noopener"
+                href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-border dark:border-darkmode-border border-t py-7">
+    <div class="text-light dark:text-darkmode-light container text-center">
+      <p>
+        Designed &amp; Developed by <a href="https://zeon.studio"
+
+
+
+
+ target="_blank"
+ 
+
+
+>Zeon Studio</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+    
+    
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<script
+  crossorigin="anonymous"
+  integrity="sha256-QyKANL8qsiU27xgAU9uCTVC7WUQCnRPb5SSdNFDofSY="
+  src="/js/script.min.43228034bf2ab22536ef180053db824d50bb5944029d13dbe5249d3450e87d26.js"></script>
+
+
+<script
+  defer
+  async
+  crossorigin="anonymous"
+  integrity="sha256-w&#43;aS42D2&#43;B&#43;Jix&#43;joZ7pAua1vbu/pRK/IhoP55b8n3w="
+  src="/js/script-lazy.min.c3e692e360f6f81f898b1fa3a19ee902e6b5bdbbbfa512bf221a0fe796fc9f7c.js"></script>
+
+
+
+<script>
+  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/service-worker.js");}
+</script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="application/javascript">
+      const announcementBox = document.getElementById('announcement');
+      const announcementButton = document.getElementById('announcement-button');
+      if (!Cookies.get('announcement-close')) {
+        announcementBox.classList.remove('announcement-hide');
+        announcementButton.onclick = function () {
+          Cookies.set('announcement-close', true, {
+            expires:  7 
+          });
+          announcementBox.classList.add('announcement-hide');
+        };
+      }
+    </script>
+  
+
+
+
+  </body>
+</html>

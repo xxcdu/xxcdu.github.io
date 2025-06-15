@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Hugoplate</title>
+    <link>//localhost:1313/tags/docker/</link>
+    <description>Recent content in Docker on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Apr 2025 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker常用命令</title>
+      <link>//localhost:1313/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>原文链接：https://blog.csdn.net/Python_0011/article/details/140313812&#xA;原文链接：https://blog.csdn.net/Python_paipai/article/details/144389754&#xA;[TOC]&#xA;1、Docker运行 要在Docker中运行容器，可以使用以下命令：&#xA;docker run [OPTIONS] IMAGE [COMMAND] [ARG.</description>
+    </item>
+    <item>
+      <title>docker常用命令</title>
+      <link>//localhost:1313/english/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>原文链接：https://blog.csdn.net/Python_0011/article/details/140313812&#xA;原文链接：https://blog.csdn.net/Python_paipai/article/details/144389754&#xA;[TOC]&#xA;1、Docker运行 要在Docker中运行容器，可以使用以下命令：&#xA;docker run [OPTIONS] IMAGE [COMMAND] [ARG.</description>
+    </item>
+  </channel>
+</rss>

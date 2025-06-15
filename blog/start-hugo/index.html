@@ -326,8 +326,8 @@
 
 
 <link
-  href="/css/style.min.2c50b6a5e59a48092f6941d22e8666e6fb20ec9a0570693e4e2b7990227952c2.css"
-  integrity="sha256-LFC2peWaSAkvaUHSLoZm5vsg7JoFcGk+Tit5kCJ5UsI="
+  href="/css/style.min.576334aef8d1c810379fe2404721671d4540dd1a55d9d65884e53c60ef71136d.css"
+  integrity="sha256-V2M0rvjRyBA3n+JARyFnHUVA3RpV2dZYhOU8YO9xE20="
   rel="stylesheet" />
 
 
@@ -1141,19 +1141,22 @@ git commit -m &#34;     &#34;
 <pre tabindex="0"><code>git commit -m &#34;  &#34;
 </code></pre><p>5、push到远程仓库</p>
 <pre tabindex="0"><code>git push -u origin master
-</code></pre><h3 id="三hugo常见问题">三、hugo常见问题</h3>
+</code></pre><p>​</p>
+<h3 id="三hugo常见问题">三、hugo常见问题</h3>
 <p>1、github部署hugo博客后，可能出现文章地址被重定向到localhost的情况，这时需要在仓库中将index.html和index.xml中的文章url改为仓库url，即../post/&hellip;..</p>
+<p>​</p>
 <p>2、若在github远端修改仓库代码，则在将public push时可能会出现：</p>
 <pre tabindex="0"><code>error: failed to push some refs to &#39;https://github.com/xxcdu/xxcdu.github.io/&#39;
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. If you want to integrate the remote changes,
 hint: use &#39;git pull&#39; before pushing again.
 hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
-</code></pre><p>显示远端被修改。这时需要先拉取远程更改：</p>
+</code></pre><p>​	显示远端被修改。这时需要先拉取远程更改：</p>
 <pre tabindex="0"><code>git pull origin master
-</code></pre><p>在本地分支上更改冲突文件，再git add 提交推送。</p>
-<p>3、远程部署后，想在本地启动服务并修改网站文件，使用“hugo server -t m10c –buildDrafts”可能出现本地服务启动后，主页中没有文章链接的情况，这时查看public根目录文件夹的index.html时，发现根本没有与链接文章url有关的的部分。更新public后，使用“hugo server -D”启动服务后主页出现了文章链接，但点开后跳转到了远程服务器的地址如https://xxcdu.github.io/post/start-hugo/而不是本地文章地址http://localhost:1313/post/hugo-github%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/，这可能是由于url冲突，需配置好网站根目录下的hugo.toml文件，将baseURL设置为远程部署的地址url。修改后发现已可以在访问本地站点。且注意使用时不要通过
-“hugo server -t m10c –buildDrafts”启动（原因不明），而是通过“hugo server -D“方式启动服务。</p>
+</code></pre><p>​	在本地分支上更改冲突文件，再git add 提交推送。</p>
+<p>​</p>
+<p>3、远程部署后，想在本地启动服务并修改网站文件，使用“hugo server -t m10c –buildDrafts”可能出现本地服务启动后，主页中没有文章链接的情况，这时查看public根目录文件夹的index.html时，发现根本没有与链接文章url有关的的部分。</p>
+<p>​	更新public后，使用“hugo server -D”启动服务后主页出现了文章链接，但点开后跳转到了远程服务器的地址如https://xxcdu.github.io/post/start-hugo/而不是本地文章地址http://localhost:1313/post/hugo-github%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/，这可能是由于url冲突，需配置好网站根目录下的hugo.toml文件，将baseURL设置为远程部署的地址url。修改后发现已可以在访问本地站点。且注意使用时不要通过</p>
 
           </div>
           <div class="row items-start justify-between">
@@ -1421,30 +1424,30 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
         <picture>
           <source
             
-              srcset="/images/nginx_img_hu9fa2b9bfa89e16187bc3c6f5fff446f5_56130_545x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/store_hu6f4b793dc5a3426420e719a50abf8269_583499_545x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/nginx_img_hu9fa2b9bfa89e16187bc3c6f5fff446f5_56130_600x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/store_hu6f4b793dc5a3426420e719a50abf8269_583499_600x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/nginx_img_hu9fa2b9bfa89e16187bc3c6f5fff446f5_56130_700x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/store_hu6f4b793dc5a3426420e719a50abf8269_583499_700x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/nginx_img_hu9fa2b9bfa89e16187bc3c6f5fff446f5_56130_1110x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/store_hu6f4b793dc5a3426420e719a50abf8269_583499_1110x0_resize_q80_h2_lanczos_3.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/nginx_img_hu9fa2b9bfa89e16187bc3c6f5fff446f5_56130_1110x0_resize_lanczos_3.png"
+              src="/images/store_hu6f4b793dc5a3426420e719a50abf8269_583499_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="nginx基础"
-            width="1163"
+            alt="取证——存储与文件系统基础"
+            width="1069"
             height="480" />
         </picture>
       
@@ -1459,8 +1462,8 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 
   
   <h4 class="mb-3">
-    <a href="/blog/nginx%E5%9F%BA%E7%A1%80/">
-      nginx基础
+    <a href="/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">
+      取证——存储与文件系统基础
     </a>
   </h4>
   
@@ -1491,9 +1494,15 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
       </li>
     </ul>
   
-  <p class="mb-6">[TOC]
-一、启动nginx systemctl start nginxsystemctl restart nginx #修改配置文件后重启ps -ef | grep nginx #查看nginx进程sudo systemctl status nginx #查看nginx状态 ​</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/nginx%E5%9F%BA%E7%A1%80/">
+  <p class="mb-6">一、磁盘结构
+1、盘面：每个盘片有上下两个盘面，从上到下从0开始编号。
+2、磁道：磁针画一圈叫一个磁道。
+3、柱面：重叠的磁道形成一个圆柱的面。
+4、扇区：每个磁道分为若干个弧度，一个磁道一般被分为63个扇区。大小一般为512B。
+5、容量 = 盘面数*柱面数*扇区数*512B
+6、簇：最小文件管理单位，由多个扇区构成，有2、4、8、16、32或64几种情况。如果为16个扇区，即8K=16*512，
+二、硬盘的文件系统</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E5%8F%96%E8%AF%81%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">
     Read More
   </a>
 </div>
@@ -1746,29 +1755,29 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
         <picture>
           <source
             
-              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_545x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_545x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_600x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_600x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_700x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_700x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_1110x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_1110x0_resize_q80_h2_lanczos_3.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/python_img_hu539594e355aa0044eacc409701b37caa_29232_1110x0_resize_lanczos_3.png"
+              src="/images/html_img_hu51dc84e84c15ef0e587774758d406b48_119447_1110x0_resize_lanczos_3.png"
             class=" mb-6 w-full rounded img"
-            alt="python基础"
+            alt="html基础"
             width="1096"
             height="480" />
         </picture>
@@ -1784,8 +1793,8 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 
   
   <h4 class="mb-3">
-    <a href="/blog/python%E5%9F%BA%E7%A1%80/">
-      python基础
+    <a href="/blog/html%E5%9F%BA%E7%A1%80/">
+      html基础
     </a>
   </h4>
   
@@ -1816,8 +1825,8 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
       </li>
     </ul>
   
-  <p class="mb-6">1、格式化字符串：f”······“ first_name = Bili​	last_name = Halidon​	full_name = f&#34;{first_name}{last_name}&#34;​	print(f&#34;Hello, {full_name.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/python%E5%9F%BA%E7%A1%80/">
+  <p class="mb-6">1、标签 ：&lt;标签&gt; 2、元素：&lt;p&gt;.......&lt;/p&gt; 3、&lt;!DOCTYPE&gt; 声明：（1）HTML5 ：&lt;!DOCTYPE html&gt;(不用区分大小写)（2）HTML 4.01：&lt;!</p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/html%E5%9F%BA%E7%A1%80/">
     Read More
   </a>
 </div>

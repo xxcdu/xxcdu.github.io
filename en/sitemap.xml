@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xxcdu.github.io/english/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en - 副本"
@@ -19,16 +19,16 @@
                 />
   </url><url>
     <loc>https://xxcdu.github.io/categories/application/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/blog/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/english/blog/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/categories/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en - 副本"
@@ -40,20 +40,23 @@
                 href="https://xxcdu.github.io/categories/"
                 />
   </url><url>
+    <loc>https://xxcdu.github.io/tags/ctf/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xxcdu.github.io/categories/data/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xxcdu.github.io/tags/nginx/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <loc>https://xxcdu.github.io/tags/docker/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xxcdu.github.io/blog/nginx%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <loc>https://xxcdu.github.io/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xxcdu.github.io/english/blog/nginx%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <loc>https://xxcdu.github.io/english/blog/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/tags/</loc>
-    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en - 副本"
@@ -65,6 +68,39 @@
                 href="https://xxcdu.github.io/tags/"
                 />
   </url><url>
+    <loc>https://xxcdu.github.io/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/tags/%E7%94%B5%E5%AD%90%E6%95%B0%E6%8D%AE%E5%8F%96%E8%AF%81/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/tags/%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2025-04-25T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/tags/windows/</loc>
+    <lastmod>2025-04-20T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/blog/windows%E8%BF%9B%E9%98%B6/</loc>
+    <lastmod>2025-04-20T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/english/blog/windows%E8%BF%9B%E9%98%B6/</loc>
+    <lastmod>2025-04-20T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2025-04-20T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/tags/nginx/</loc>
+    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/blog/nginx%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/english/blog/nginx%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2025-04-13T05:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xxcdu.github.io/tags/web%E6%9E%B6%E6%9E%84/</loc>
     <lastmod>2025-04-13T05:00:00+00:00</lastmod>
   </url><url>
@@ -75,9 +111,6 @@
     <lastmod>2025-03-30T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/tags/%E5%AD%98%E5%82%A8/</loc>
-    <lastmod>2025-03-30T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xxcdu.github.io/tags/%E7%94%B5%E5%AD%90%E6%95%B0%E6%8D%AE%E5%8F%96%E8%AF%81/</loc>
     <lastmod>2025-03-30T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/tags/html/</loc>
@@ -97,6 +130,15 @@
   </url><url>
     <loc>https://xxcdu.github.io/english/blog/php%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2025-01-04T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2022-05-08T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</loc>
+    <lastmod>2022-05-08T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xxcdu.github.io/english/blog/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%96%E8%AF%81/</loc>
+    <lastmod>2022-05-08T05:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xxcdu.github.io/tags/django/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>

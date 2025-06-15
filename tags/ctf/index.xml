@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CTF on Hugoplate</title>
+    <link>//localhost:1313/tags/ctf/</link>
+    <description>Recent content in CTF on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Apr 2025 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常见编码特征</title>
+      <link>//localhost:1313/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</guid>
+      <description>参考文章：30余种加密编码类型的密文特征分析（建议收藏）-腾讯云开发者社区-腾讯云&#xA;[TOC]&#xA;1、MD5、sha1、HMAC算法、NTLM等相似加密类型： （1）MD5 （例：21232F297A57A5A743894A0E4A801FC3）32位&#xA;由数字“0-9”和字母“a-f”所组成的字符串、。如果出现这个范围以外的字符说明这可能是个错误的md5值，没必要再拿去解密。&#xA;（2）sha1（例：d033e22ae348aeb5660fc2140aec35850c4da997）40位&#xA;（3）相似加密类型长度：&#xA;# 算法 长度 1 md5 32/16 2 sha1 40 3 sha256 64 4 sha512 128 5 adler32 8 6 crc32 8 7 crc32b 8 8 fnv132 8 9 fnv164 16 10 fnv1a32 8 11 fnv1a64 16 12 gost 64 13 gost-crypto 64 14 haval128,3 32 15 haval128,4 32 16 haval128,5 32 17 haval160,3 40 18 haval160,4 40 19 haval160,5 40 20 haval192,3 48 21 haval192,4 48 22 haval192,5 48 23 haval224,3 56 24 haval224,4 56 25 haval224,5 56 26 haval256,3 64 27 haval256,4 64 28 haval256,5 64 29 joaat 8 30 md2 32 31 md4 32 32 ripemd128 32 33 ripemd160 40 34 ripemd256 64 35 ripemd320 80 36 sha224 56 37 sha3-224 56 38 sha3-256 64 39 sha3-384 96 40 sha3-512 128 41 sha384 96 42 sha512/224 56 43 sha512/256 64 44 snefru 64 45 snefru256 64 46 tiger128,3 32 47 tiger128,4 32 48 tiger160,3 40 49 tiger160,4 40 50 tiger192,3 48 51 tiger192,4 48 52 whirlpool 128 53 mysql 老MYSQL数据库用的，16位，且第1位和第7位必须为0-8 54 mysql5 40 55 NTLM 32 56 Domain Cached Credentials 32 常用解密网站： www.</description>
+    </item>
+    <item>
+      <title>常见编码特征</title>
+      <link>//localhost:1313/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</link>
+      <pubDate>Fri, 25 Apr 2025 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/blog/%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E7%89%B9%E5%BE%81/</guid>
+      <description>参考文章：30余种加密编码类型的密文特征分析（建议收藏）-腾讯云开发者社区-腾讯云&#xA;[TOC]&#xA;1、MD5、sha1、HMAC算法、NTLM等相似加密类型： （1）MD5 （例：21232F297A57A5A743894A0E4A801FC3）32位&#xA;由数字“0-9”和字母“a-f”所组成的字符串、。如果出现这个范围以外的字符说明这可能是个错误的md5值，没必要再拿去解密。&#xA;（2）sha1（例：d033e22ae348aeb5660fc2140aec35850c4da997）40位&#xA;（3）相似加密类型长度：&#xA;# 算法 长度 1 md5 32/16 2 sha1 40 3 sha256 64 4 sha512 128 5 adler32 8 6 crc32 8 7 crc32b 8 8 fnv132 8 9 fnv164 16 10 fnv1a32 8 11 fnv1a64 16 12 gost 64 13 gost-crypto 64 14 haval128,3 32 15 haval128,4 32 16 haval128,5 32 17 haval160,3 40 18 haval160,4 40 19 haval160,5 40 20 haval192,3 48 21 haval192,4 48 22 haval192,5 48 23 haval224,3 56 24 haval224,4 56 25 haval224,5 56 26 haval256,3 64 27 haval256,4 64 28 haval256,5 64 29 joaat 8 30 md2 32 31 md4 32 32 ripemd128 32 33 ripemd160 40 34 ripemd256 64 35 ripemd320 80 36 sha224 56 37 sha3-224 56 38 sha3-256 64 39 sha3-384 96 40 sha3-512 128 41 sha384 96 42 sha512/224 56 43 sha512/256 64 44 snefru 64 45 snefru256 64 46 tiger128,3 32 47 tiger128,4 32 48 tiger160,3 40 49 tiger160,4 40 50 tiger192,3 48 51 tiger192,4 48 52 whirlpool 128 53 mysql 老MYSQL数据库用的，16位，且第1位和第7位必须为0-8 54 mysql5 40 55 NTLM 32 56 Domain Cached Credentials 32 常用解密网站： www.</description>
+    </item>
+  </channel>
+</rss>

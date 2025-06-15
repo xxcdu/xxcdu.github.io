@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web架构 on Hugoplate</title>
-    <link>https://xxcdu.github.io/tags/web%E6%9E%B6%E6%9E%84/</link>
+    <link>//localhost:1313/tags/web%E6%9E%B6%E6%9E%84/</link>
     <description>Recent content in Web架构 on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xxcdu.github.io/tags/web%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/web%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nginx基础</title>
-      <link>https://xxcdu.github.io/blog/nginx%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/blog/nginx%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 13 Apr 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
       <description>[TOC]&#xA;一、启动nginx systemctl start nginx&#xD;systemctl restart nginx #修改配置文件后重启&#xD;ps -ef | grep nginx #查看nginx进程&#xD;sudo systemctl status nginx #查看nginx状态 ​</description>
     </item>
     <item>
       <title>nginx基础</title>
-      <link>https://xxcdu.github.io/english/blog/nginx%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/english/blog/nginx%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 13 Apr 2025 05:00:00 +0000</pubDate>
-      <guid>https://xxcdu.github.io/english/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/english/blog/nginx%E5%9F%BA%E7%A1%80/</guid>
       <description>[TOC]&#xA;一、启动nginx systemctl start nginx&#xD;systemctl restart nginx #修改配置文件后重启&#xD;ps -ef | grep nginx #查看nginx进程&#xD;sudo systemctl status nginx #查看nginx状态 ​</description>
     </item>
   </channel>

@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/categories/</loc>
+    <loc>//localhost:1313/en%20-%20%E5%89%AF%E6%9C%AC/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://xxcdu.github.io/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en - 副本"
-                href="https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/categories/"
+                href="//localhost:1313/en%20-%20%E5%89%AF%E6%9C%AC/categories/"
                 />
   </url><url>
-    <loc>https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/</loc>
+    <loc>//localhost:1313/en%20-%20%E5%89%AF%E6%9C%AC/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://xxcdu.github.io/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en - 副本"
-                href="https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/"
+                href="//localhost:1313/en%20-%20%E5%89%AF%E6%9C%AC/"
                 />
   </url><url>
-    <loc>https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/tags/</loc>
+    <loc>//localhost:1313/en%20-%20%E5%89%AF%E6%9C%AC/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://xxcdu.github.io/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en - 副本"
-                href="https://xxcdu.github.io/en%20-%20%E5%89%AF%E6%9C%AC/tags/"
+                href="//localhost:1313/en%20-%20%E5%89%AF%E6%9C%AC/tags/"
                 />
   </url>
 </urlset>
